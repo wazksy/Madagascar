@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Madagascar</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- http://t.co/dKP3o1e -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- For all browsers -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="css/animate.min.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+
+</head>
+<body>
+
+
+
+
+
+	<!-- Header -------------------------------------------------------------------- -->
+
+	<header>
+
+		<nav class="wrapper">
+			<menu class="navbar bck--white margin--no-bottom">
+				<li><a href="index.html" class="navbar__link">Inicio</a></li>
+				<li><a href="components.html" class="navbar__link">Componentes</a></li>
+			</menu>
+		</nav>
+
+		<div class="docs__header bck--theme-500 txt--white padding margin--bottom">
+			<div class="wrapper txt--shadow">
+				<h1>Madagascar</h1>
+				<p class="subtitle txt--theme-100">Trozos de código HTML reutilizables</p>
+			</div>
+		</div>
+		
+	</header>
+
+
+
+
+
+	<!-- Main -------------------------------------------------------------------- -->
+
+	<main>
+
+
+
+		<section>
+
+
+
+
+
+			<!-- Inicio -------------------------------------------------------------------- -->
+
+			<article class="wrapper">
+
+				<p>Madagscar cuenta con un conjunto de componentes compuestos para ser reutilizados o incluidos como shortcodes de WordPress. Utilizan reglas CSS específicas o clases genéricas.</p>
+
+			</article>
+
+
+
+			<!-- Icons -------------------------------------------------------------------- -->
+
+			<article class="wrapper">
+			
+				<h2>Icons</h2>
+
+				<p>Madagascar incluye la librería de iconos Awesome.</p>
+
+				<p>Basta con añadir la clase <code>.icon</code> más la clase del icono en cuestión <code>.icon--fa-laptop</code> a cualquier etiqueta, aunque el resultado puede ser inesperado. Normalmente se utiliza la etiqueta <code>i</code> con poco valor semántico.</p>
+
+				<p>Puede modificar el tamaño del icono añadiendo las clases <code>.icon--xs</code>, <code>.icon--s</code>, <code>.icon--m</code>, <code>.icon--l</code> o <code>.icon--xl</code>.</p>
+
+				<p>También puedes modificar el aspecto de un icono añadiendo un círculo de fondo con la clase <code>.icon--circle</code> o un border circular con la clase <code>.icon--border</code></p>
+		
+				<table>
+					<tbody>
+						<tr>
+							<td class="txt--center"><i class="icon icon--fa-laptop"></i></td>
+							<td class="txt--center"><i class="icon icon--fa-laptop icon--xs"></i></td>
+							<td class="txt--center"><i class="icon icon--fa-laptop icon--s"></i></td>
+							<td class="txt--center"><i class="icon icon--fa-laptop icon--m"></i></td>
+							<td class="txt--center"><i class="icon icon--fa-laptop icon--l"></i></td>
+							<td class="txt--center"><i class="icon icon--fa-laptop icon--xl"></i></td>
+						</tr>
+						<tr>
+							<td class="txt--center"><i class="icon icon--fa-laptop"></i></td>
+							<td class="txt--center"><i class="icon icon--fa-laptop icon--xs icon--circle center"></i></td>
+							<td class="txt--center"><i class="icon icon--fa-laptop icon--s icon--circle center"></i></td>
+							<td class="txt--center"><i class="icon icon--fa-laptop icon--m icon--circle center"></i></td>
+							<td class="txt--center"><i class="icon icon--fa-laptop icon--l icon--circle center"></i></td>
+							<td class="txt--center"><i class="icon icon--fa-laptop icon--xl icon--circle center"></i></td>
+						</tr>
+						<tr>
+							<td class="txt--center"><i class="icon icon--fa-laptop"></i></td>
+							<td class="txt--center"><i class="icon icon--fa-laptop icon--xs icon--border center"></i></td>
+							<td class="txt--center"><i class="icon icon--fa-laptop icon--s icon--border center"></i></td>
+							<td class="txt--center"><i class="icon icon--fa-laptop icon--m icon--border center"></i></td>
+							<td class="txt--center"><i class="icon icon--fa-laptop icon--l icon--border center"></i></td>
+							<td class="txt--center"><i class="icon icon--fa-laptop icon--xl icon--border center"></i></td>
+						</tr>
+					</tbody>
+				</table>
+
+			</article>
+
+
+
+
+
+			<!-- Boxes -------------------------------------------------------------------- -->
+
+			<article class="wrapper">
+
+				<h2>Boxes</h2>
+
+
+
+				<!-- <div class="box animated bounce"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated flash"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated pulse"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated rubberBand"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated shake"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated swing"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated tada"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated wobble"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated bounceIn"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated bounceInDown"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated bounceInLeft"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated bounceInRight"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated bounceInUp"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated bounceOut"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated bounceOutDown"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated bounceOutLeft"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated bounceOutRight"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated bounceOutUp"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated fadeIn"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated fadeInDown"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated fadeInDownBig"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated fadeInLeft"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated fadeInLeftBig"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated fadeInRight"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated fadeInRightBig"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated fadeInUp"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated fadeInUpBig"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated fadeOut"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated fadeOutDown"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated fadeOutDownBig"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated fadeOutLeft"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated fadeOutLeftBig"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated fadeOutRight"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated fadeOutRightBig"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated fadeOutUp"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated fadeOutUpBig"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated flip"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated flipInX"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated flipInY"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated flipOutX"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated flipOutY"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated lightSpeedIn"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated lightSpeedOut"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated rotateIn"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated rotateInDownLeft"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated rotateInDownRight"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated rotateInUpLeft"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated rotateInUpRight"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated rotateOut"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated rotateOutDownLeft"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated rotateOutDownRight"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated rotateOutUpLeft"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated rotateOutUpRight"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated hinge"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated rollIn"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated rollOut"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated zoomIn"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated zoomInDown"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated zoomInLeft"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated zoomInRight"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated zoomInUp"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated zoomOut"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated zoomOutDown"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated zoomOutLeft"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated zoomOutRight"><h4 class="box__title">Probando!!!</h4></div> -->
+				<!-- <div class="box animated zoomOutUp"><h4 class="box__title">Probando!!!</h4></div> -->
+
+
+
+
+
+
+
+
+
+				<div class="box has-animation" data-animation="fadeInLeft">
+
+					<h4 class="box__title">Title Theme</h4>
+
+					<p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ad maxime doloremque accusamus praesentium enim sapiente rem repellat unde voluptatem.</p>
+
+					<a href="#" class="box__close"></a>
+
+				</div>
+
+				<div class="box box--secondary-a has-animation" data-animation="fadeInLeft">
+
+					<h4 class="box__title">Title Secondary A</h4>
+
+					<p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ad maxime doloremque accusamus praesentium enim sapiente rem repellat unde voluptatem.</p>
+
+					<a href="#" class="box__close"></a>
+
+				</div>
+
+				<div class="box box--secondary-b has-animation" data-animation="fadeInLeft">
+
+					<h4 class="box__title">Title Secondary B</h4>
+
+					<p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ad maxime doloremque accusamus praesentium enim sapiente rem repellat unde voluptatem.</p>
+
+					<a href="#" class="box__close"></a>
+
+				</div>
+
+				<div class="box box--grey has-animation" data-animation="fadeInLeft">
+
+					<h4 class="box__title">Title Grey</h4>
+
+					<p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ad maxime doloremque accusamus praesentium enim sapiente rem repellat unde voluptatem.</p>
+
+					<a href="#" class="box__close"></a>
+
+				</div>
+
+				<div class="box box--error has-animation" data-animation="fadeInLeft">
+
+					<h4 class="box__title icon icon-fa-warning icon-margin-right">Title Error</h4>
+
+					<p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ad maxime doloremque accusamus praesentium enim sapiente rem repellat unde voluptatem.</p>
+
+				</div>
+
+				<div class="box box--info has-animation" data-animation="fadeInLeft">
+
+					<h4 class="box__title icon icon-fa-info icon-margin-right">Title Info</h4>
+
+					<p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ad maxime doloremque accusamus praesentium enim sapiente rem repellat unde voluptatem.</p>
+
+				</div>
+
+				<div class="box box--success has-animation" data-animation="fadeInLeft">
+
+					<h4 class="box__title">Title Success</h4>
+
+					<p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ad maxime doloremque accusamus praesentium enim sapiente rem repellat unde voluptatem.</p>
+
+				</div>
+
+				<div class="box box--warning has-animation" data-animation="fadeInLeft">
+
+					<h4 class="box__title">Title Warning</h4>
+
+					<p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ad maxime doloremque accusamus praesentium enim sapiente rem repellat unde voluptatem.</p>
+
+				</div>
+
+
+
+				<!-- Colores personalizados -->
+
+				<p>Puede modificar el aspecto de un cuadro aplicando clases de colores.</p>
+
+				<div class="box bck--white txt--secondary-a-500 has-animation" data-animation="fadeInLeft">
+
+					<h4 class="box__title txt--theme-500">Title Theme</h4>
+
+					<p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ad maxime doloremque accusamus praesentium enim sapiente rem repellat unde voluptatem.</p>
+
+				</div>
+
+			</article>
+
+
+
+
+
+			<!-- Blockquotes -------------------------------------------------------------------- -->
+
+			<article class="wrapper">
+				
+				<h2>Blockquotes</h2>
+
+				<blockquote class="blockquotes has-animation" data-animation="fadeInLeft">
+
+					<p class="blockquotes__text">Lorem ipsum dolor sit amet</p>
+
+					<cite class="blockquotes__author">James Graham</cite>
+
+					<i class="blockquotes__icon icon icon--fa-quote-right icon--m icon--border"></i>
+
+				</blockquote>
+
+			</article>
+
+
+
+
+
+			<!-- Navs -------------------------------------------------------------------- -->
+
+			<article class="wrapper">
+
+				<h2>Navs</h2>
+
+				<menu class="navbar">
+					<li><a href="" class="navbar__link navbar__link--active">Link 1</a></li>
+					<li><a href="" class="navbar__link">Link 2</a></li>
+					<li><a href="" class="navbar__link">Link 3</a></li>
+				</menu>
+
+				<menu class="navside">
+					<li><a href="" class="navside__link navside__link--active">Link 1</a></li>
+					<li><a href="" class="navside__link">Link 2</a></li>
+					<li><a href="" class="navside__link">Link 3</a></li>
+				</menu>
+
+			</article>
+
+
+
+
+
+			<!-- Navicons -------------------------------------------------------------------- -->
+
+			<article class="wrapper">
+
+				<h2>Navicons</h2>
+
+				<menu class="navicons">
+					<li><a href="" class="navicons__link"><i class="icon icon--fa-facebook"></i></a></li>
+					<li><a href="" class="navicons__link"><i class="icon icon--fa-twitter"></i></a></li>
+					<li><a href="" class="navicons__link"><i class="icon icon--fa-behance"></i></a></li>
+					<li><a href="" class="navicons__link"><i class="icon icon--fa-github"></i></a></li>
+					<li><a href="" class="navicons__link"><i class="icon icon--fa-pinterest"></i></a></li>
+				</menu>
+
+			</article>
+
+
+
+
+
+			<!-- Tabs -------------------------------------------------------------------- -->
+
+			<article class="wrapper">
+
+				<h2>Tabs</h2>
+
+				<div class="tab margin-bottom">
+
+					<menu class="tab__nav">
+						<li><a href="#" class="tab__link tab__link--active">Tab 1</a></li>
+						<li><a href="#" class="tab__link">Tab 2</a></li>
+						<li><a href="#" class="tab__link">Tab 3</a></li>
+					</menu>
+
+					<div class="tab__content">
+
+						<div class="tab__tab tab__tab--active">
+							1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi obcaecati expedita eveniet nobis officiis explicabo blanditiis quibusdam cum natus sunt ab velit non, fugiat debitis, nostrum facere, laudantium dolore totam.
+						</div>
+
+						<div class="tab__tab">
+							2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima corrupti velit totam doloremque quasi nihil aperiam provident odio placeat assumenda qui, earum, dolorem recusandae modi repellendus. Est odit, dolorum numquam.
+						</div>
+
+						<div class="tab__tab">
+							3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis illum beatae reiciendis ducimus inventore aspernatur earum molestias, dolor, vero saepe odio, quaerat animi iste, aliquam blanditiis. Quod, eaque voluptatum nesciunt.
+						</div>
+
+					</div>
+					
+				</div>
+				
+			</article>
+
+
+
+
+
+			<!-- Toggles -------------------------------------------------------------------- -->
+
+			<article class="wrapper">
+
+				<h2>Toggles</h2>
+
+				<div class="toggle">
+
+					<ul class="toggle__nav">
+						<li>
+							<a href="#" class="toggle__link">Toggle 1</a>
+
+							<div class="toggle__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro reiciendis excepturi recusandae quasi eius aliquam ex odit ab, veritatis nulla omnis quis debitis magnam, quaerat doloremque exercitationem officia facere temporibus!</div>
+						</li>
+						<li>
+							<a href="#" class="toggle__link">Toggle 2</a>
+
+							<div class="toggle__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ea at, voluptatem fuga accusamus labore. Accusamus fugit laboriosam sint nostrum cum quo blanditiis pariatur quidem, repellat magni temporibus culpa rerum.</div>
+						</li>
+						<li>
+							<a href="#" class="toggle__link">Toggle 3</a>
+
+							<div class="toggle__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum sit nihil minima architecto laboriosam vero atque dolorum, voluptatem cum reprehenderit, consectetur vitae harum mollitia assumenda. Aliquam vero excepturi doloremque dolor.</div>
+						</li>
+					</ul>
+
+				</div>
+
+				<h2>Accordion</h2>
+
+				<div class="toggle--accordion">
+
+					<ul class="toggle--accordion__nav">
+						<li>
+							<a href="#" class="toggle--accordion__link">Toggle 1</a>
+
+							<div class="toggle--accordion__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro reiciendis excepturi recusandae quasi eius aliquam ex odit ab, veritatis nulla omnis quis debitis magnam, quaerat doloremque exercitationem officia facere temporibus!</div>
+						</li>
+						<li>
+							<a href="#" class="toggle--accordion__link">Toggle 2</a>
+
+							<div class="toggle--accordion__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ea at, voluptatem fuga accusamus labore. Accusamus fugit laboriosam sint nostrum cum quo blanditiis pariatur quidem, repellat magni temporibus culpa rerum.</div>
+						</li>
+						<li>
+							<a href="#" class="toggle--accordion__link">Toggle 3</a>
+
+							<div class="toggle--accordion__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum sit nihil minima architecto laboriosam vero atque dolorum, voluptatem cum reprehenderit, consectetur vitae harum mollitia assumenda. Aliquam vero excepturi doloremque dolor.</div>
+						</li>
+					</ul>
+
+				</div>
+				
+			</article>
+
+
+
+
+
+			<!-- Pagination -->
+
+			<article class="wrapper">
+
+				<h3>Pagination</h3>
+
+				<menu class="pagination">
+					<li><a href="" class="pagination__link pagination__link--active">1</a></li>
+					<li><a href="" class="pagination__link">2</a></li>
+					<li><a href="" class="pagination__link">3</a></li>
+					<li><a href="" class="pagination__link">4</a></li>
+					<li><a href="" class="pagination__link">5</a></li>
+				</menu>
+
+			</article>
+
+
+
+
+
+			<!-- Breadcrumbs -->
+
+			<article class="wrapper">
+
+				<h3>Breadcrumbs</h3>
+
+				<menu class="breadcrumb">
+					<li><a href="" class="breadcrumb__link">Home</a></li>
+					<li><a href="" class="breadcrumb__link">Page</a></li>
+					<li>Here</li>
+				</menu>
+
+			</article>
+
+
+
+
+
+			<!-- Progress Bar -------------------------------------------------------------------- -->
+
+			<article class="wrapper">
+
+				<h2>Progress Bar</h2>
+
+				<h5 class="progress-bar__title">HTML</h5>
+				<div class="progress-bar">
+					<span style="width: 80%" data-progress="80%" class="progress-bar__bar"></span>
+				</div>
+
+				<h5 class="progress-bar__title">CSS</h5>
+				<div class="progress-bar progress-bar--secondary-a">
+					<span style="width: 85%" data-progress="85%" class="progress-bar__bar"></span>
+				</div>
+
+				<h5 class="progress-bar__title">Javascript</h5>
+				<div class="progress-bar progress-bar--secondary-b">
+					<span style="width: 30%" data-progress="30%" class="progress-bar__bar"></span>
+				</div>
+
+				<h5 class="progress-bar__title">Jquery</h5>
+				<div class="progress-bar progress-bar--info">
+					<span style="width: 45%" data-progress="45%" class="progress-bar__bar"></span>
+				</div>
+
+				<h5 class="progress-bar__title">Sass</h5>
+				<div class="progress-bar progress-bar--error">
+					<span style="width: 50%" data-progress="50%" class="progress-bar__bar"></span>
+				</div>
+
+				<h5 class="progress-bar__title">WordPress</h5>
+				<div class="progress-bar progress-bar--success">
+					<span style="width: 60%" data-progress="60%" class="progress-bar__bar"></span>
+				</div>
+
+				<h5 class="progress-bar__title">PHP</h5>
+				<div class="progress-bar progress-bar--warning">
+					<span style="width: 65%" data-progress="65%" class="progress-bar__bar"></span>
+				</div>
+				
+			</article>
+
+
+
+
+
+			<!-- Progress Circle -------------------------------------------------------------------- -->
+
+			<article class="wrapper">
+
+				<h2>Progress Circle</h2>
+
+				<div class="progress-circle">
+					<div class="circle" data-anim="base left"></div>
+					<div class="circle" data-anim="base right"></div>
+				</div>
+
+			</article>
+
+
+
+
+
+			<!-- Blurs -------------------------------------------------------------------- -->
+
+			<article class="wrapper">
+
+				<h2>Blurbs</h2>
+
+				<div class="row">
+
+					<div class="col col--xs-one-third">
+
+						<div class="blurb">
+
+							<i class="icon icon--xl icon--fa-wordpress txt--theme-500 has-animation" data-animation="rotateIn"></i>
+
+							<div class="blurb__info">
+
+								<h4 class="blurb__title">Title blur</h4>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								
+							</div>
+							
+						</div>
+
+					</div>
+
+					<div class="col col--xs-one-third">
+
+						<div class="blurb">
+
+							<i class="icon icon--xl icon--fa-laptop txt--secondary-a-500 has-animation" data-animation="rotateIn"></i>
+
+							<div class="blurb__info">
+
+								<h4 class="blurb__title">Title blur</h4>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+							</div>
+							
+						</div>
+						
+					</div>
+
+					<div class="col col--xs-one-third">
+
+						<div class="blurb">
+
+							<i class="icon icon--xl icon--fa-cloud-upload txt--secondary-b-500 has-animation" data-animation="rotateIn"></i>
+
+							<div class="blurb__info">
+
+								<h4 class="blurb__title">Title blur</h4>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+							</div>
+							
+						</div>
+						
+					</div>
+
+					<div class="col col--xs-one-third">
+
+						<div class="blurb">
+
+							<i class="icon icon--xl icon--circle icon--fa-wordpress txt--white has-animation" data-animation="rotateIn"></i>
+
+							<div class="blurb__info">
+
+								<h4 class="blurb__title">Title blur</h4>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								
+							</div>
+							
+						</div>
+
+					</div>
+
+					<div class="col col--xs-one-third">
+
+						<div class="blurb">
+
+							<i class="icon icon--xl icon--circle icon--fa-laptop txt--secondary-a-500 bck--grey-200 has-animation" data-animation="rotateIn"></i>
+
+							<div class="blurb__info">
+
+								<h4 class="blurb__title">Title blur</h4>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+							</div>
+							
+						</div>
+						
+					</div>
+
+					<div class="col col--xs-one-third">
+
+						<div class="blurb">
+
+							<i class="icon icon--xl icon--circle icon--fa-cloud-upload txt--secondary-b-500 has-animation" data-animation="rotateIn"></i>
+
+							<div class="blurb__info">
+
+								<h4 class="blurb__title">Title blur</h4>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+							</div>
+							
+						</div>
+						
+					</div>
+
+				</div>
+
+
+
+
+
+				<!-- Burbs inline -->
+
+				<div class="row">
+
+					<div class="col col--xs-one-half">
+
+						<div class="blurb--inline">
+
+							<i class="icon icon--s icon--fa-cloud-upload txt--theme-500 has-animation" data-animation="rotateIn"></i>
+
+							<div class="blurb__info">
+
+								<h4 class="blurb__title">Title blur</h4>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+							</div>
+
+						</div>
+						
+					</div>
+
+					<div class="col col--xs-one-half">
+
+						<div class="blurb--inline">
+
+							<i class="icon icon--s icon--fa-desktop txt--theme-500 has-animation" data-animation="rotateIn"></i>
+
+							<div class="blurb__info">
+
+								<h4 class="blurb__title">Title blur</h4>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								
+							</div>
+
+						</div>
+						
+					</div>
+
+					<div class="col col--xs-one-half">
+
+						<div class="blurb--inline">
+
+							<i class="icon icon--s icon--fa-cloud-upload txt--theme-500 has-animation" data-animation="rotateIn"></i>
+
+							<div class="blurb__info">
+
+								<h4 class="blurb__title">Title blur</h4>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								
+							</div>
+
+						</div>
+						
+					</div>
+
+					<div class="col col--xs-one-half">
+
+						<div class="blurb--inline">
+
+							<i class="icon icon--s icon--circle icon--fa-desktop txt--white has-animation" data-animation="rotateIn"></i>
+
+							<div class="blurb__info">
+
+								<h4 class="blurb__title">Title blur</h4>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+							</div>
+
+						</div>
+						
+					</div>
+
+				</div>
+				
+			</article>
+
+
+
+
+
+			<!-- Teams -------------------------------------------------------------------- -->
+
+			<article class="wrapper">
+				
+				<h2>Teams</h2>
+
+				<div class="row">
+
+					<div class="col col--xs-one-fourth">
+
+						<div class="team-member">
+
+							<a href="#" class="team-member__link"></a>
+							<div class="team-member__photo" style="background-image: url(img/member.jpg);"></div>
+
+							<div class="team-member__info">
+
+								<h4 class="team-member__name">John Hammond</h4>
+								<p class="team-member__position">CEO, Creative Director</p>
+
+								<div class="team-member__social">
+								
+									<menu class="navicons">
+										<li><a href="" class="navicons__link"><i class="icon icon--fa-facebook"></i></a></li>
+										<li><a href="" class="navicons__link"><i class="icon icon--fa-twitter"></i></a></li>
+										<li><a href="" class="navicons__link"><i class="icon icon--fa-behance"></i></a></li>
+										<li><a href="" class="navicons__link"><i class="icon icon--fa-github"></i></a></li>
+										<li><a href="" class="navicons__link"><i class="icon icon--fa-pinterest"></i></a></li>
+									</menu>
+
+								</div>
+								
+							</div>
+						
+						</div>
+
+					</div>
+
+					<div class="col col--xs-one-fourth">
+
+						<div class="team-member">
+
+							<a href="#" class="team-member__link"></a>
+							<div class="team-member__photo" style="background-image: url(img/member.jpg);"></div>
+
+							<div class="team-member__info">
+
+								<h4 class="team-member__name">John Hammond</h4>
+								<p class="team-member__position">CEO, Creative Director</p>
+
+								<div class="team-member__social">
+								
+									<menu class="navicons">
+										<li><a href="" class="navicons__link"><i class="icon icon--fa-facebook"></i></a></li>
+										<li><a href="" class="navicons__link"><i class="icon icon--fa-twitter"></i></a></li>
+										<li><a href="" class="navicons__link"><i class="icon icon--fa-behance"></i></a></li>
+										<li><a href="" class="navicons__link"><i class="icon icon--fa-github"></i></a></li>
+										<li><a href="" class="navicons__link"><i class="icon icon--fa-pinterest"></i></a></li>
+									</menu>
+
+								</div>
+								
+							</div>
+						
+						</div>
+
+					</div>
+
+					<div class="col col--xs-one-half">
+
+						<div class="team-member">
+
+							<a href="#" class="team-member__link"></a>
+							<div class="team-member__photo" style="background-image: url(img/member.jpg);"></div>
+
+							<div class="team-member__info">
+
+								<h4 class="team-member__name">John Hammond</h4>
+								<p class="team-member__position">CEO, Creative Director</p>
+
+								<div class="team-member__social">
+								
+									<menu class="navicons">
+										<li><a href="" class="navicons__link"><i class="icon icon--fa-facebook"></i></a></li>
+										<li><a href="" class="navicons__link"><i class="icon icon--fa-twitter"></i></a></li>
+										<li><a href="" class="navicons__link"><i class="icon icon--fa-behance"></i></a></li>
+										<li><a href="" class="navicons__link"><i class="icon icon--fa-github"></i></a></li>
+										<li><a href="" class="navicons__link"><i class="icon icon--fa-pinterest"></i></a></li>
+									</menu>
+
+								</div>
+								
+							</div>
+						
+						</div>
+
+					</div>
+
+				</div>	
+
+				</div>
+
+			</article>
+
+
+
+
+
+			<!-- Testimonial -------------------------------------------------------------------- -->
+
+			<article class="wrapper">
+
+				<h2>Testimonial</h2>
+
+				<blockquote class="testimonial">
+
+					<p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<cite>
+						<span class="testimonial__author">Alex</span>
+						<span class="testimonial__company"><a href="#">MrBussines.com</a></span>
+						<span class="testimonial__city">New York</span>
+					</cite>
+
+					<i class="testimonial__icon icon icon--fa-quote-right icon--m icon--border"></i>
+
+				</blockquote>
+
+			</article>
+
+
+
+
+
+			<!-- Pricing table -------------------------------------------------------------------- -->
+
+			<article class="wrapper">
+
+				<h2>Pricing table</h2>
+
+				<div class="pricing pricing--col-3">
+
+					<div class="pricing__col">
+
+						<div class="pricing__head">
+							
+							<h3 class="pricing__title">Title</h3>
+
+						</div>
+
+						<div class="pricing__content">
+
+							<div class="pricing__price">
+
+								<h3 class="pricing__amount">99 <span class="pricing__currency">$</span></h3>
+
+								<span class="pricing__interval">per year</span>		
+								
+							</div>
+							
+							<ul class="princing__features">
+								
+								<li>Feature 1</li>
+								<li>Feature 2</li>
+								<li>Feature 3</li>
+
+							</ul>
+
+							<a href="#" class="btn">Buy</a>
+
+						</div>
+						
+					</div>
+
+					<div class="pricing__col pricing__col--highlight">
+
+						<div class="pricing__head">
+							
+							<h3 class="pricing__title">Title</h3>
+
+						</div>
+
+						<div class="pricing__content">
+
+							<div class="pricing__price">
+
+								<h3 class="pricing__amount">99 <span class="pricing__currency">$</span></h3>
+
+								<span class="pricing__interval">per year</span>		
+								
+							</div>
+							
+							<ul class="princing__features">
+								
+								<li>Feature 1</li>
+								<li>Feature 2</li>
+								<li>Feature 3</li>
+
+							</ul>
+
+							<a href="#" class="btn">Buy</a>
+
+						</div>
+						
+					</div>
+
+					<div class="pricing__col">
+
+						<div class="pricing__head">
+							
+							<h3 class="pricing__title">Title</h3>
+
+						</div>
+
+						<div class="pricing__content">
+
+							<div class="pricing__price">
+
+								<h3 class="pricing__amount">99 <span class="pricing__currency">$</span></h3>
+
+								<span class="pricing__interval">per year</span>		
+								
+							</div>
+							
+							<ul class="princing__features">
+								
+								<li>Feature 1</li>
+								<li>Feature 2</li>
+								<li>Feature 3</li>
+
+							</ul>
+
+							<a href="#" class="btn">Buy</a>
+
+						</div>
+						
+					</div>
+
+				</div>
+
+			</article>
+
+
+
+		</section>
+
+	</main>
+
+	<!-- Scripts -->
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+	<script src="js/vendor/waypoints.min.js"></script>
+
+	<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+//
+// Madagascar - @wazksy
+// _buttons.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$BUTTONS
+\*-------------------------------------------------*/
+
+.btn {
+	background-color: $color-button-background;
+	border: none;
+	@include border-radius($radius);
+	color: map-get($colors-palette, white);
+	cursor: pointer;
+	display: inline-block;
+	font-family: inherit;
+	font-size: $font-size-base;
+	font-weight: bold;
+	height: $input-height;
+	padding: 5px 6px 4px 5px;
+	text-align: center;
+	width: auto;
+
+	&:hover {
+		background-color: $color-button-hover-background;
+		color: map-get($colors-palette, white);
+		text-decoration: none;
+	}
+
+	&.icon {
+
+		padding-left: $gutter / 2;
+
+		&:before {
+			margin-right: $gutter / 4;
+		}
+	}
+}
+
+
+
+/* Colors */
+
+.btn--theme {
+	background-color: map-get($colors-palette, theme-500);
+
+	&:hover {
+		background-color: map-get($colors-palette, theme-600);
+	}
+}
+
+.btn--secondary-a {
+	background-color: map-get($colors-palette, secondary-a-500);
+
+	&:hover {
+		background-color: map-get($colors-palette, secondary-a-600);
+	}
+}
+
+.btn--secondary-b {
+	background-color: map-get($colors-palette, secondary-b-500);
+
+	&:hover {
+		background-color: map-get($colors-palette, secondary-b-600);
+	}
+}
+
+.btn--error {
+	background-color: map-get($colors-palette, error-500);
+
+	&:hover {
+		background-color: map-get($colors-palette, error-600);
+	}
+}
+
+.btn--info {
+	background-color: map-get($colors-palette, info-500);
+
+	&:hover {
+		background-color: map-get($colors-palette, info-600);
+	}
+}
+
+.btn--success {
+	background-color: map-get($colors-palette, success-500);
+
+	&:hover {
+		background-color: map-get($colors-palette, success-600);
+	}
+}
+
+.btn--warning {
+	background-color: map-get($colors-palette, warning-500);
+
+	&:hover {
+		background-color: map-get($colors-palette, warning-600);
+	}
+}
+
+
+
+/* Size */
+
+// placeholder
+
+%btn--size {
+	height: auto;
+}
+
+.btn--full {
+	display: block;
+	width: 100%;
+}
+
+.btn--xl {
+	font-size: $font-size-xl;
+	@extend %btn--size;
+}
+
+.btn--l {
+	font-size: $font-size-l;
+	@extend %btn--size;
+}
+
+.btn--s {
+	font-size: $font-size-s;
+	@extend %btn--size;
+}
+
+.btn--xs {
+	font-size: $font-size-xs;
+	@extend %btn--size;
+}

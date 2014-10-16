@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Madagascar</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- http://t.co/dKP3o1e -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- For all browsers -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+
+</head>
+<body>
+
+
+
+
+
+	<!-- Header -------------------------------------------------------------------- -->
+
+	<header>
+
+		<nav class="wrapper">
+			<menu class="navbar bck--white margin--no-bottom">
+				<li><a href="index.html" class="navbar__link">Inicio</a></li>
+				<li><a href="components.html" class="navbar__link">Componentes</a></li>
+			</menu>
+		</nav>
+
+		<div class="docs__header bck--theme-500 txt--white padding margin--bottom">
+			<div class="wrapper txt--shadow">
+				<h1>Madagascar</h1>
+				<p class="subtitle txt--theme-100">Un framework CSS escrito en SASS que hará tu desarrollo frontend más sencillo</p>
+			</div>
+		</div>
+		
+	</header>
+
+
+
+
+
+	<!-- Main -------------------------------------------------------------------- -->
+
+	<main>
+
+
+
+		<section>
+
+
+
+
+
+			<!-- Inicio -------------------------------------------------------------------- -->
+
+			<article class="wrapper">
+
+				<p>Madagascar es un framework CSS escrito en SASS que sigue la notación BEM y que facilita el desarrollo frontend. Madagascar cuenta con un sistema de grillas sencillo y una paleta de colores que genera multidud de matices automáticamente gracias a SASS a partir de valores iniciales.</p>
+
+				<p>Madagascar incluye multitud de clases que permiten aplicar estilos a una página agregando directamente clases en el archivo HTML sin la necesidad de escribir mucho código específico, siguiendo así varios paradigmas de desarrollo CSS. Esta tendencia puede considerarse una mala práctica, pues se crea así un código HTML menos semántico, más pesado y complejo, pero tiene la ventaja de que el código CSS es altamente reutilizable.</p>
+
+				<p>Este framework está siendo escrito con el objetivo principal de desarrollar diseños para WordPress, por esa razón se tiene en cuenta que muchas de las clases puedan ser sobrescritas con valores obtenidos desde la base de datos de WordPress. También los componentes diseñados dentro de Madagascar tienen como objetivo poder ser utilizados como shortcodes para WordPress.</p>
+
+			</article>
+
+
+
+
+
+			<!-- Colores -------------------------------------------------------------------- -->
+
+			<article class="wrapper">
+
+				<h2>Colores</h2>
+
+				<p>A partir de las variables de color definidas en el archivo _variables.scss SASS genera toda la paleta cromática.</p>
+				
+				<p>Mediante SASS también se definen automáticamente clases para background como <code>.bck--theme-500</code>, clases para bordes como <code>.border--secondary-a-200</code> y clases para color de texto como <code>.txt--grey-800</code>.</p>
+				
+				<p>Los valores centrales de cada color tienen el valor 500 y las variaciones cromáticas se generan a partir de él, salvo en los tonos de gris.</p>
+
+				<div class="row docs__list-colors">
+
+					<!-- Theme color -->
+
+					<div class="col col--xs-one-fourth">
+
+						<ul class="list--unstyled">
+							<li class="bck--theme-500 txt--white">Theme</li>
+							<li class="bck--theme-100">100 <small></small></li>
+							<li class="bck--theme-200">200 <small></small></li>
+							<li class="bck--theme-300 txt--white">300 <small></small></li>
+							<li class="bck--theme-400 txt--white">400 <small></small></li>
+							<li class="bck--theme-500 txt--white">500 <small></small></li>
+							<li class="bck--theme-600 txt--white">600 <small></small></li>
+							<li class="bck--theme-700 txt--white">700 <small></small></li>
+							<li class="bck--theme-800 txt--white">800 <small></small></li>
+							<li class="bck--theme-900 txt--white">900 <small></small></li>
+						</ul>
+						
+					</div>
+
+					<!-- Secondary A Color -->
+
+					<div class="col col--xs-one-fourth">
+
+						<ul class="list--unstyled">
+							<li class="bck--secondary-a-500 txt--white">Secondary A</li>
+							<li class="bck--secondary-a-100">100 <small></small></li>
+							<li class="bck--secondary-a-200">200 <small></small></li>
+							<li class="bck--secondary-a-300 txt--white">300 <small></small></li>
+							<li class="bck--secondary-a-400 txt--white">400 <small></small></li>
+							<li class="bck--secondary-a-500 txt--white">500 <small></small></li>
+							<li class="bck--secondary-a-600 txt--white">600 <small></small></li>
+							<li class="bck--secondary-a-700 txt--white">700 <small></small></li>
+							<li class="bck--secondary-a-800 txt--white">800 <small></small></li>
+							<li class="bck--secondary-a-900 txt--white">900 <small></small></li>
+						</ul>
+
+					</div>
+
+					<!-- Secondary B Color -->
+
+					<div class="col col--xs-one-fourth">
+
+						<ul class="list--unstyled">
+							<li class="bck--secondary-b-500 txt--white">Secondary A</li>
+							<li class="bck--secondary-b-100">100 <small></small></li>
+							<li class="bck--secondary-b-200">200 <small></small></li>
+							<li class="bck--secondary-b-300 txt--white">300 <small></small></li>
+							<li class="bck--secondary-b-400 txt--white">400 <small></small></li>
+							<li class="bck--secondary-b-500 txt--white">500 <small></small></li>
+							<li class="bck--secondary-b-600 txt--white">600 <small></small></li>
+							<li class="bck--secondary-b-700 txt--white">700 <small></small></li>
+							<li class="bck--secondary-b-800 txt--white">800 <small></small></li>
+							<li class="bck--secondary-b-900 txt--white">900 <small></small></li>
+						</ul>
+
+					</div>
+
+					<!-- Grey Color -->
+
+					<div class="col col--xs-one-fourth">
+
+						<ul class="list--unstyled">
+							<li class="bck--grey-500 txt--white">Grey</li>
+							<li class="bck--grey-100">100 <small></small></li>
+							<li class="bck--grey-200">200 <small></small></li>
+							<li class="bck--grey-300 txt--white">300 <small></small></li>
+							<li class="bck--grey-400 txt--white">400 <small></small></li>
+							<li class="bck--grey-500 txt--white">500 <small></small></li>
+							<li class="bck--grey-600 txt--white">600 <small></small></li>
+							<li class="bck--grey-700 txt--white">700 <small></small></li>
+							<li class="bck--grey-800 txt--white">800 <small></small></li>
+							<li class="bck--grey-900 txt--white">900 <small></small></li>
+							<li class="bck--white">White <small></small></li>
+							<li class="bck--black txt--white">Black <small></small></li>
+						</ul>
+
+					</div>
+
+					<!-- Error Color -->
+
+					<div class="col col--xs-one-fourth">
+
+						<ul class="list--unstyled">
+							<li class="bck--error-500 txt--white">Error</li>
+							<li class="bck--error-100">100 <small></small></li>
+							<li class="bck--error-200">200 <small></small></li>
+							<li class="bck--error-300 txt--white">300 <small></small></li>
+							<li class="bck--error-400 txt--white">400 <small></small></li>
+							<li class="bck--error-500 txt--white">500 <small></small></li>
+							<li class="bck--error-600 txt--white">600 <small></small></li>
+							<li class="bck--error-700 txt--white">700 <small></small></li>
+							<li class="bck--error-800 txt--white">800 <small></small></li>
+							<li class="bck--error-900 txt--white">900 <small></small></li>
+						</ul>
+
+					</div>
+
+					<!-- Info Color -->
+
+					<div class="col col--xs-one-fourth">
+
+						<ul class="list--unstyled">
+							<li class="bck--info-500 txt--white">Info</li>
+							<li class="bck--info-100">100 <small></small></li>
+							<li class="bck--info-200">200 <small></small></li>
+							<li class="bck--info-300 txt--white">300 <small></small></li>
+							<li class="bck--info-400 txt--white">400 <small></small></li>
+							<li class="bck--info-500 txt--white">500 <small></small></li>
+							<li class="bck--info-600 txt--white">600 <small></small></li>
+							<li class="bck--info-700 txt--white">700 <small></small></li>
+							<li class="bck--info-800 txt--white">800 <small></small></li>
+							<li class="bck--info-900 txt--white">900 <small></small></li>
+						</ul>
+
+					</div>
+
+					<!-- Success Color -->
+
+					<div class="col col--xs-one-fourth">
+
+						<ul class="list--unstyled">
+							<li class="bck--success-500 txt--white">Success</li>
+							<li class="bck--success-100">100 <small></small></li>
+							<li class="bck--success-200">200 <small></small></li>
+							<li class="bck--success-300 txt--white">300 <small></small></li>
+							<li class="bck--success-400 txt--white">400 <small></small></li>
+							<li class="bck--success-500 txt--white">500 <small></small></li>
+							<li class="bck--success-600 txt--white">600 <small></small></li>
+							<li class="bck--success-700 txt--white">700 <small></small></li>
+							<li class="bck--success-800 txt--white">800 <small></small></li>
+							<li class="bck--success-900 txt--white">900 <small></small></li>
+						</ul>
+
+					</div>
+
+					<!-- Warning Color -->
+
+					<div class="col col--xs-one-fourth">
+
+						<ul class="list--unstyled">
+							<li class="bck--warning-500 txt--white">Warning</li>
+							<li class="bck--warning-100">100 <small></small></li>
+							<li class="bck--warning-200">200 <small></small></li>
+							<li class="bck--warning-300 txt--white">300 <small></small></li>
+							<li class="bck--warning-400 txt--white">400 <small></small></li>
+							<li class="bck--warning-500 txt--white">500 <small></small></li>
+							<li class="bck--warning-600 txt--white">600 <small></small></li>
+							<li class="bck--warning-700 txt--white">700 <small></small></li>
+							<li class="bck--warning-800 txt--white">800 <small></small></li>
+							<li class="bck--warning-900 txt--white">900 <small></small></li>
+						</ul>
+
+					</div>
+
+				</div>
+
+			</article>
+
+
+
+
+
+			<!-- Grilla -------------------------------------------------------------------- -->
+
+			<article class="wrapper">
+
+				<h2>Grid & Layout</h2>
+						
+				<p>El sistema de grillas de Madagascar utiliza una nomenclatura semántica y cuenta con un máximo de 4 columnas. Establece una separación entre columnas en px en función del valor de la variable gutter que encontramos en el archivo _variables.scss. Además es un sistema responsive ya que permite definir diferentes estructuras de columnas para cada ancho de pantalla utilizando clases específicas. Los tamaños de pantalla son xs, s, m, l y xl y sus valores se pueden modificar en el archivo _variables.scss.</p>
+
+				<p>Para crear una estructura de grillas debemos agrupar todo el contenido dentro de una etiqueta con la clase <code>.row</code>, que añade reglas clearfix y establece márgenes negativos para evitar el uso de clases para la primera y la última columna o para columnas anidadas. A su vez, todo el contenido debe estar agrupado dentro de una etiqueta con la clase <code>.wrapper</code>, que establece un ancho máximo a partir del valor de la variable max-width que econtramos en el archivo _variables.scss y centra todo el contenido o agrupado dentro de una etiqueta con la clase <code>.wrapper-full</code> que utiliza todo el ancho de la pantalla.</p>
+
+				<p>Las columnas se establecen mediante la clase <code>.col</code> y mediante clases del tipo <code>.col--xs-one-fourth</code>. Una misma columna podrá tener varias clases diferentes para que tenga comportamientos diferentes en cada ancho de pantalla. Dado que el sistema de grillas utiliza el paradigma <u>mobile first</u>, en primer lugar debemos establecer la clase para el ancho de pantalla más pequeña <code>.col--xs-one-half</code> y las clases que añadamos para otros anchos de pantalla superiores sustituirán los valores de la primera cuando sea necesario.</p>
+
+				<div class="row margin--bottom">
+
+					<div class="col col--xs-one-half bck--theme-200 padding txt--l">1/2</div>
+					<div class="col col--xs-one-half bck--theme-300 padding txt--l">1/2</div>
+
+				</div>
+
+				<div class="row margin--bottom">
+
+					<div class="col col--xs-one-third bck--theme-200 padding txt--l">1/3</div>
+					<div class="col col--xs-one-third bck--theme-300 padding txt--l">1/3</div>
+					<div class="col col--xs-one-third bck--theme-200 padding txt--l">1/3</div>
+
+				</div>
+
+				<div class="row margin--bottom">
+
+					<div class="col col--xs-one-fourth bck--theme-200 padding txt--l">1/4</div>
+					<div class="col col--xs-one-fourth bck--theme-300 padding txt--l">1/4</div>
+					<div class="col col--xs-one-fourth bck--theme-200 padding txt--l">1/4</div>
+					<div class="col col--xs-one-fourth bck--theme-300 padding txt--l">1/4</div>
+
+				</div>
+
+				<h3>Columnas anidadas</h3>
+
+				<div class="row margin--bottom">
+
+					<div class="col col--xs-one-fourth bck--theme-200 padding txt--l">1/4</div>
+					<div class="col col--xs-three-fourth bck--theme-300 txt--l">
+						<div class="row">
+							<div class="col col--xs-one-half bck--secondary-a-200 padding txt--l">1/2</div>
+							<div class="col col--xs-one-half bck--secondary-a-300 padding txt--l">1/2</div>
+						</div>
+					</div>
+
+				</div>
+
+				<h3>Desplazamiento de columnas</h3>
+
+				<div class="row margin--bottom bck--grey-100">
+					<div class="offset--xs-one-third col col--xs-one-third bck--theme-200 padding txt--l">1/3 + offset 1/3</div>
+					<div class="col col--xs-one-third bck--theme-300 padding txt--l">1/3</div>
+				</div>
+
+				<p>También hay disponibles algunas clases para el tratamiento del layout. Por defecto las filas y muchos otros elementos no incorporan márgenes inferiores para la separación horizontal. Para ello deberá añadir la clase <code>.margin--bottom</code> al elemento.</p>
+
+				<p>También podrá anular el margen o el padding inferior de un elemento con las clases <code>.padding--no-bottom</code> y <code>.margin--no-bottom</code>.</p>
+
+				<p>Con las clases <code>.border--right</code>, <code>.border--left</code>, <code>.border--bottom</code> y <code>.border--top</code> puedes crear separaciones entre columnas o filas.</p>
+
+			</article>
+
+
+
+
+
+			<!-- Tipografías -------------------------------------------------------------------- -->
+
+			<article class="wrapper">
+
+				<h2>Tipografías</h2>
+
+				<p>En el archivo _variables.scss se definen tres familias tipográficas para tres usos diferentes.</p>
+
+				<ul class="docs__list-fonts">
+					<li class="regular">Regular family: <span></span></li>
+					<li class="txt--font-alt">Alt family: <span></span></li>
+					<li class="txt--font-code">Code family: <span></span></li>
+				</ul>
+
+				<p>También hay varias clases para modificar el tamaño, el grosor y la alineación del texto.</p>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Alineación</th>
+							<th>Tamaño</th>
+							<th>Grosor</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="txt--center">.txt--center</td>
+							<td class="txt--xs">.txt--xs</td>
+							<td class="txt--thin">.txt--thin</td>
+						</tr>
+						<tr>
+							<td class="txt--left">.txt--left</td>
+							<td class="txt--s">.txt--s</td>
+							<td class="txt--light">.txt--light</td>
+						</tr>
+						<tr>
+							<td class="txt--right">.txt--right</td>
+							<td class="txt--l">.txt--l</td>
+							<td class="txt--regular">.txt--regular</td>
+						</tr>
+						<tr>
+							<td class="txt--justify">.txt--justify</td>
+							<td class="txt--xl">.txt--xl</td>
+							<td class="txt--medium">.txt--medium</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td class="txt--semibold">.txt--semibold</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td class="txt--bold">.txt--bold</td>
+						</tr>
+						
+					</tbody>
+				</table>
+
+			</article>
+
+			
+
+
+
+			<!-- Semántica -------------------------------------------------------------------- -->
+
+			<article class="wrapper">
+
+				<h2>Semántica</h2>
+
+				<p>Las etiquetas HTML tienen un valor o significado semántico dentro de la página. En el siguiente web de la organización <a href="https://developer.mozilla.org/es/docs/HTML/HTML5/HTML5_lista_elementos">Mozilla</a> podemos encontrar un listado completo de las etiquetas HTML y su correspondiente función.</p>
+
+				<p>Dentro de este documento recojemos las etiquetas HTML más importantes en relación con texto.</p>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Etiqueta</th>
+							<th>Descripción</th>
+							<th>Ejemplo</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>a</code></td>
+							<td>Representa un hiperenlace, enlazando a otro recurso.</td>
+							<td><a href="#">Enlace</a></td>
+						</tr>
+						<tr>
+							<td><code>em</code></td>
+							<td>Representa un texto enfatizado, como un acento de intensidad.</td>
+							<td><em>Texto enfatizado</em></td>
+						</tr>
+						<tr>
+							<td><code>strong</code></td>
+							<td>Representa un texto especialmente importante.</td>
+							<td><strong>Texto importante</strong></td>
+						</tr>
+						<tr>
+							<td><code>small</code></td>
+							<td>Representa un comentario aparte, es decir, textos como un descargo de responsabilidad o una nota de derechos de autoría, que no son esenciales para la comprensión del documento.</td>
+							<td><small>Comentario aparte</small></td>
+						</tr>
+						<tr>
+							<td><code>s</code></td>
+							<td>Representa contenido que ya no es exacto o relevante.</td>
+							<td><s>Contenido inexacto</s></td>
+						</tr>
+						<tr>
+							<td><code>cite</code></td>
+							<td>Representa el título de una obra.</td>
+							<td><cite>Título</cite></td>
+						</tr>
+						<tr>
+							<td><code>q</code></td>
+							<td>Representa una cita textual inline.</td>
+							<td><q>Cita textual</q></td>
+						</tr>
+						<tr>
+							<td><code>dfn</code></td>
+							<td>Representa un término cuya definición está contenida en su contenido ancestro más próximo.</td>
+							<td><dfn>Término</dfn></td>
+						</tr>
+						<tr>
+							<td><code>abbr</code></td>
+							<td>Representa una abreviación o un acrónimo; la expansión de la abreviatura puede ser representada por el atributo title.</td>
+							<td><abbr title="Abrebiación">Abbr</abbr></td>
+						</tr>
+						<tr>
+							<td><code>data</code></td>
+							<td>Asocia un equivalente legible por máquina a sus contenidos. (Este elemento está sólamente en la versión de la WHATWG del estandar HTML, y no en la versión de la W3C de HTML5).</td>
+							<td><data value="3967381398">data</data></td>
+						</tr>
+						<tr>
+							<td><code>time</code></td>
+							<td>Representa un valor de fecha y hora; el equivalente legible por máquina puede ser representado en el atributo datetime.</td>
+							<td><time datetime="25-03-1977T14:30+00:00">Fecha cualquiera</time></td>
+						</tr>
+						<tr>
+							<td><code>code</code></td>
+							<td>Representa un código de ordenador.</td>
+							<td><code>Código de ordenador</code></td>
+						</tr>
+						<tr>
+							<td><code>var</code></td>
+							<td>Representa a una variable, es decir, una expresión matemática o contexto de programación, un identificador que represente a una constante, un símbolo que identifica una cantidad física, un parámetro de una función o un marcador de posición en prosa.</td>
+							<td><var>Variable</var></td>
+						</tr>
+						<tr>
+							<td><code>samp</code></td>
+							<td>Representa la salida de un programa o un ordenador.</td>
+							<td><samp>Salida de un programa</samp></td>
+						</tr>
+						<tr>
+							<td><code>kbd</code></td>
+							<td>Representa la entrada de usuario o usuaria, por lo general desde un teclado, pero no necesariamente, este puede representar otras formas de entrada de usuario o usuaria, como comandos de voz transcritos.</td>
+							<td><kbd>Entrada de usuario</kbd></td>
+						</tr>
+						<tr>
+							<td><code>sub y sup</code></td>
+							<td>Representan un subíndice y un superíndice, respectivamente.</td>
+							<td><sub>Subíndice</sub><sup>Superíndice</sup></td>
+						</tr>
+						<tr>
+							<td><code>i</code></td>
+							<td>Representa un texto en una voz o estado de ánimo alterno, o por lo menos de diferente calidad, como una designación taxonómica, un término técnico, una frase idiomática, un pensamiento o el nombre de un barco.</td>
+							<td><i>Texto alterado</i></td>
+						</tr>
+						<tr>
+							<td><code>b</code></td>
+							<td>Representa un texto hacia el cual se llama la atención para propósitos utilitaros. No confiere ninguna importancia adicional y no implica una voz alterna.</td>
+							<td><b>Llamada de atención</b></td>
+						</tr>
+						<tr>
+							<td><code>u</code></td>
+							<td>Representa una anotación no textual sin-articular, como etiquetar un texto como mal escrito o etiquetar un nombre propio en texto en Chino.</td>
+							<td><u>Texto etiquetado</u></td>
+						</tr>
+						<tr>
+							<td><code>mark</code></td>
+							<td>Representa texto resaltado con propósitos de referencia, es decir por su relevancia en otro contexto.</td>
+							<td><mark>Texto marcado</mark></td>
+						</tr>
+						<tr>
+							<td><code>ins</code></td>
+							<td>Define una adición en el documento.</td>
+							<td><ins>Texto agregado</ins></td>
+						</tr>
+						<tr>
+							<td><code>del</code></td>
+							<td>Define una remoción del documento.</td>
+							<td><del>Texto eliminado</del></td>
+						</tr>
+					</tbody>
+				</table>
+
+			</article>
+
+
+
+
+
+			<!-- Cabeceras -------------------------------------------------------------------- -->
+
+			<article class="wrapper">
+
+				<h2 class="title">Cabeceras</h2>
+
+				<div class="row">
+
+					<div class="col col--xs-one-fourth">
+						<h1>Heading 1 <small>Small</small></h1>
+						<h2>Heading 2 <small>Small</small></h2>
+						<h3>Heading 3 <small>Small</small></h3>
+						<h4>Heading 4 <small>Small</small></h4>
+						<h5>Heading 5 <small>Small</small></h5>
+						<h6>Heading 6 <small>Small</small></h6>
+					</div>
+
+					<div class="col col--xs-one-fourth">
+						<p>La clase <code>.title</code> refuerza el aspecto de los títulos.</p>
+					</div>
+
+					<div class="col col--xs-one-half">
+						<h1 class="title">Heading 1 .title</h1>
+						<h2 class="title">Heading 2 .title</h2>
+						<h3 class="title">Heading 3 .title</h3>
+						<h4 class="title">Heading 4 .title</h4>
+						<h5 class="title">Heading 5 .title</h5>
+						<h6 class="title">Heading 6 .title</h6>
+					</div>
+
+				</div>
+						
+			</article>
+
+
+
+
+
+			<!-- Listas -------------------------------------------------------------------- -->
+
+			<article class="wrapper">
+				
+				<h2 class="title">Listas</h2>
+
+				<div class="row">
+					
+					<div class="col col--xs-one-fourth">
+
+						<h3>Desordenada</h3>
+
+						<ul>
+							<li>Item 1</li>
+							<li>Item 2</li>
+							<li>Item 3</li>
+							<li>Item 4</li>
+						</ul>
+						
+					</div>
+
+					<div class="col col--xs-one-fourth">
+
+						<h3>Ordenada</h3>
+						
+						<ol>
+							<li>Item 1</li>
+							<li>Item 2</li>
+							<li>Item 3</li>
+							<li>Item 4</li>
+						</ol>
+
+					</div>
+
+					<div class="col col--xs-one-fourth">
+
+						<h3>Sin estilos</h3>
+
+						<p>La clase <code>.unstyled</code> elimina el aspecto típico de una lista.</p>
+						
+						<ul class="list--unstyled">
+							<li>Item 1</li>
+							<li>Item 2</li>
+							<li>Item 3</li>
+							<li>Item 4</li>
+						</ul>
+
+					</div>
+
+					<div class="col col--xs-one-fourth">
+						
+						<h3>Definición</h3>
+
+						<dl>
+							<dt>Title</dt>
+							<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</dd>
+							<dt>Title</dt>
+							<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</dd>
+						</dl>
+
+					</div>
+
+				</div>
+
+			</article>
+
+
+
+
+
+			<!-- Tablas -->
+
+			<article class="wrapper">
+				
+				<h2>Tablas</h2>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Title 1</th>
+							<th>Title 2</th>
+							<th>Title 3</th>
+							<th>Title 4</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Row 1</td>
+							<td>Row 1</td>
+							<td>Row 1</td>
+							<td>Row 1</td>
+						</tr>
+						<tr>
+							<td>Row 2</td>
+							<td>Row 2</td>
+							<td>Row 2</td>
+							<td>Row 2</td>
+						</tr>
+						<tr>
+							<td>Row 3</td>
+							<td>Row 3</td>
+							<td>Row 3</td>
+							<td>Row 3</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>Striped</h3>
+
+				<p>La clase <code>.table--striped</code> agrega un coloreado alterno a las filas.</p>
+
+				<table class="table--striped">
+					<thead>
+						<tr>
+							<th>Title 1</th>
+							<th>Title 2</th>
+							<th>Title 3</th>
+							<th>Title 4</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Row 1</td>
+							<td>Row 1</td>
+							<td>Row 1</td>
+							<td>Row 1</td>
+						</tr>
+						<tr>
+							<td>Row 2</td>
+							<td>Row 2</td>
+							<td>Row 2</td>
+							<td>Row 2</td>
+						</tr>
+						<tr>
+							<td>Row 3</td>
+							<td>Row 3</td>
+							<td>Row 3</td>
+							<td>Row 3</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</article>
+
+
+
+
+
+			<!-- Botones -->
+
+			<article class="wrapper">
+
+				<h2>Botones</h2>
+
+				<p>La clase <code>.btn</code> es aplicable a enlaces (a) o botones (button).</p>
+
+				<h3>Colores</h3>
+
+				<article class="margin--bottom">
+
+					<a href="#" class="btn">.btn</a>
+					<a href="#" class="btn btn--theme">.btn .btn--theme</a>
+					<a href="#" class="btn btn--secondary-a">.btn .btn--secondary-a</a>
+					<a href="#" class="btn btn--secondary-b">.btn .btn--secondary-b</a>
+					<a href="#" class="btn btn--error">.btn .btn--error</a>
+					<a href="#" class="btn btn--info">.btn .btn--info</a>
+					<a href="#" class="btn btn--success">.btn .btn--success</a>
+					<a href="#" class="btn btn--warning">.btn .btn--warning</a>
+					
+				</article>
+
+				<h3>Tamaños</h3>
+
+				<article class="margin--bottom">
+
+					<a href="#" class="btn btn--xl">.btn .btn--xl</a>
+					<a href="#" class="btn btn--l">.btn .btn--l</a>
+					<a href="#" class="btn">.btn</a>
+					<a href="#" class="btn btn--s">.btn .btn--s</a>
+					<a href="#" class="btn btn--xs">.btn .btn--xs</a>
+					
+				</article>
+
+				<h3>Full</h3>
+
+				<article class="margin--bottom">
+					
+					<a href="#" class="btn btn--full">.btn .btn--full</a>
+
+				</article>
+
+				<h3>Iconos</h3>
+
+				<p>Es posible agregar cualquier icono utilizando las clases correspondientes.</p>
+
+				<article class="margin--bottom">
+
+					<a href="#" class="btn icon icon--fa-refresh">.btn</a>
+					
+				</article>
+
+			</article>
+
+
+
+
+
+			<!-- Formularios -->
+
+			<article class="wrapper">
+
+				<h2>Formularios</h2>
+
+				<form action="post">
+
+					<fieldset>
+
+						<legend>Formulario sencillo</legend>
+						
+						<label for="email">Email</label>
+						<input type="email" id="email" placeholder="email@dominio.com" required>
+
+						<label for="password">Password</label>
+						<input type="password" id="password" placeholder="Password" required>
+
+						<p class="form__help-text">Example block-level help text here.</p>
+
+						<button type="submit" class="btn">Sign up</button>
+
+					</fieldset>
+					
+				</form>
+
+				<form action="post" class="form--inline">
+
+					<fieldset>
+						
+						<legend>Formulario inline</legend>
+
+						<p>Agregando la clase <code>.form--inline</code></p>
+
+						<input type="email" id="email" placeholder="email@dominio.com" required>
+						<input type="password" id="password" placeholder="Password" required>
+						<button type="submit" class="btn">Sign up</button>
+
+					</fieldset>
+					
+				</form>
+
+				<form action="post" >
+
+					<fieldset>
+						
+						<legend>Formulario group</legend>
+
+						<p>Puede agrupar varios elementos de formulario dentro de una etiqueta con la clase <code>.form-group</code></p>
+
+						<div class="form--group">
+							
+							<input type="text" id="text" placeholder="Search..." required=""><button type="submit" class="btn">Search</button>
+
+						</div>
+
+						<div class="form--group">
+							
+							<input type="text" id="text" placeholder="Name" required><input type="email" id="email" placeholder="Email" required><button type="submit" class="btn">Search</button>
+
+						</div>
+
+						<div class="form--group">
+
+							<div class="form__addon">Email</div><input type="text" id="text" placeholder="Email" required>
+
+						</div>
+
+						<div class="form--group">
+
+							<div class="form__addon icon icon--fa-envelope-o"></div><input type="text" id="text" placeholder="Email" required>
+
+						</div>
+
+					</fieldset>
+					
+				</form>
+
+				<form action="post">
+
+					<fieldset>
+						
+						<legend>Formulario sizes</legend>
+
+						<input type="text" id="text" placeholder="x large" required class="input--xl">
+						<input type="text" id="text" placeholder="large" required class="input--l">
+						<input type="text" id="text" placeholder="default" required>
+						<input type="text" id="text" placeholder="small" required class="input--s">
+						<input type="text" id="text" placeholder="xs" required class="input--xs">
+
+					</fieldset>
+					
+				</form>
+
+				<h3>Inputs</h3>
+
+				<form action="post">
+
+					<label for="text">type="text"</label>
+					<input type="text" id="text" placeholder="Placeholder" required>
+
+					<label for="text">type="text" disabled</label>
+					<input type="text" id="text" placeholder="Placeholder" disabled>
+
+					<label for="text">type="text" readonly</label>
+					<input type="text" id="text" placeholder="Placeholder" readonly>
+
+					<label for="password">type="password"</label>
+					<input type="password" id="password" placeholder="Password" required>
+
+					<label for="email">type="email"</label>
+					<input type="email" id="email" placeholder="email@dominio.com" required>
+
+					<label for="url">type="url"</label>
+					<input type="url" id="url" placeholder="http://" required>
+
+					<label for="number">type="number"</label>
+					<input type="number" id="number" placeholder="12345..." required>
+
+					<label for="tel">type="tel"</label>
+					<input type="tel" id="tel" placeholder="+34 555 555 555" required>
+
+					<label for="select">Select</label>
+					<select id="select">
+						<option>1</option>
+						<option>2</option>
+					</select>
+
+					<ul>
+						<li><label><input type="checkbox"></label> Checkbox 1</li>
+						<li><label><input type="checkbox"></label> Checkbox 2</li>
+					</ul>
+
+					<ul>
+						<li><label><input type="radio"></label> Radio 1</li>
+						<li><label><input type="radio"></label> Radio 2</li>
+					</ul>
+
+					<textarea name="textarea" id="textarea" cols="30" rows="10">Lorem...</textarea>
+
+				</form>
+
+			</article>
+
+
+		</section>
+
+	</main>
+
+
+	<!-- Scripts -->
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+	<script src="js/vendor/waypoints.min.js"></script>
+
+	<script src="js/script.js"></script>
+
+</body>
+</html>

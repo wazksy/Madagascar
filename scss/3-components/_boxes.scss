@@ -1,0 +1,176 @@
+//
+// Madagascar - @wazksy
+// _boxes.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$BOXES
+\*-------------------------------------------------*/
+
+.box {
+	background-color: map-get($colors-palette, theme-500);
+	border-left: 10px solid map-get($colors-palette, theme-600);
+	color: map-get($colors-palette, theme-100);
+	margin-bottom: $gutter;
+	padding: $gutter;
+	position: relative;
+	width: 100%;
+}
+
+.box__title {
+	border-bottom: 0;
+	color: map-get($colors-palette, white);
+	font-size: $font-size-xl;
+	margin-bottom: $gutter / 2;
+	padding-bottom: 0;
+}
+
+.box__text {
+	margin-bottom: 0;
+}
+
+.box__close {
+	background-color: map-get($colors-palette, theme-600);
+	color: map-get($colors-palette, white);
+	cursor: pointer;
+	display: block;
+	height: 20px;
+	position: absolute;
+	right: $gutter / 4;
+	text-align: center;
+	top: $gutter / 4;
+	width: 20px;
+	@include border-radius(50%);
+
+	&:hover {
+		background-color: map-get($colors-palette, theme-700);
+		text-decoration: none;
+	}
+
+	&:before {
+		@extend .icon;
+		color: map-get($colors-palette, white);
+		content: map-get($icons, fa-times);
+	}
+}
+
+
+
+/* Colors */
+/* Modifican la clase .box pero son dependientes */
+
+.box--theme {
+	background-color: map-get($colors-palette, theme-500);
+	border-left: 10px solid map-get($colors-palette, theme-600);
+	color: map-get($colors-palette, theme-100);
+
+	.box__close {
+		background-color: map-get($colors-palette, theme-600);
+
+		&:hover {
+			background-color: map-get($colors-palette, theme-700);
+		}
+	}
+}
+
+.box--secondary-a {
+	background-color: map-get($colors-palette, secondary-a-500);
+	border-color: map-get($colors-palette, secondary-a-600);
+	color: map-get($colors-palette, secondary-a-100);
+
+	.box__close {
+		background-color: map-get($colors-palette, secondary-a-600);
+
+		&:hover {
+			background-color: map-get($colors-palette, secondary-a-700);
+		}
+	}
+}
+
+.box--secondary-b {
+	background-color: map-get($colors-palette, secondary-b-500);
+	border-color: map-get($colors-palette, secondary-b-600);
+	color: map-get($colors-palette, secondary-b-100);
+
+	.box__close {
+		background-color: map-get($colors-palette, secondary-b-600);
+
+		&:hover {
+			background-color: map-get($colors-palette, secondary-b-700);
+		}
+	}
+}
+
+.box--grey {
+	background-color: map-get($colors-palette, grey-500);
+	border-color: map-get($colors-palette, grey-600);
+	color: map-get($colors-palette, grey-100);
+
+	.box__close {
+		background-color: map-get($colors-palette, grey-600);
+
+		&:hover {
+			background-color: map-get($colors-palette, grey-700);
+		}
+	}
+}
+
+.box--error {
+	background-color: map-get($colors-palette, error-500);
+	border-color: map-get($colors-palette, error-600);
+	color: map-get($colors-palette, error-100);
+
+	.box__close {
+		background-color: map-get($colors-palette, error-600);
+
+		&:hover {
+			background-color: map-get($colors-palette, error-700);
+		}
+	}
+}
+
+.box--info {
+	background-color: map-get($colors-palette, info-500);
+	border-color: map-get($colors-palette, info-600);
+	color: map-get($colors-palette, info-100);
+
+	.box__close {
+		background-color: map-get($colors-palette, info-600);
+
+		&:hover {
+			background-color: map-get($colors-palette, info-700);
+		}
+	}
+}
+
+.box--success {
+	background-color: map-get($colors-palette, success-500);
+	border-color: map-get($colors-palette, success-600);
+	color: map-get($colors-palette, success-100);
+
+	.box__close {
+		background-color: map-get($colors-palette, success-600);
+
+		&:hover {
+			background-color: map-get($colors-palette, success-700);
+		}
+	}
+}
+
+.box--warning {
+	background-color: map-get($colors-palette, warning-500);
+	border-color: map-get($colors-palette, warning-600);
+	color: map-get($colors-palette, warning-100);
+
+	.box__close {
+		background-color: map-get($colors-palette, warning-600);
+
+		&:hover {
+			background-color: map-get($colors-palette, warning-700);
+		}
+	}
+}

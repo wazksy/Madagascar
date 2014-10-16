@@ -1,0 +1,126 @@
+// 
+// Madagascar - @wazksy
+// style.scss
+//
+// Incorpora todos los archivos .scss
+// Debe comentar o eliminar los archivos que no necesite utilizar
+//
+
+
+
+// TAREAS
+// 
+// 
+// - ARCHIVOS
+// - ---Ordenar los archivos de forma que se tenga en cuenta la cascada
+// - ---Modificar z-index
+// 
+// - LAYOUT
+// - ---Clases para aplicar márgenes y paddings (Sólo las clases necesarias, bottom y no-padding-botton, etc.)
+// - ---Grilla semantica como DIVI
+// - ---Separador de columnas opcional o solo sidebar
+// - Separador vertical HR
+// - Revisar mixin media-query
+// 
+// - TEXTO
+// - ---Clases para alinear texto (center y right)
+// - ---Clases para títulos y secciones de título (como SALIENT)
+// 
+// - TEXURAS
+// - ---Clases para background, border y color de texto en estado HOVER
+// - ---Incorporar iconos
+// 
+// - SHORTCODES (Introducir jquery)
+// - ---Tab completo
+// - ---Toggle y acordeón completo
+// - Pricing table
+// - ---Progress bar
+// - Progress circle
+// - Contador numérico
+// - Cuenta atrás
+// - Call to action
+// - ---Person (Perfil)
+// - ---Testimonial
+// - Formularios prefijados: Subscripción, inicio de sesión y de contacto
+// 
+// - ANIMACIONES
+// - ---Clases para animaciones varias
+// - Valorar si incluir la libreria animation completa o sólo las animaciones más comunes
+// - Revisar las transiciones
+
+
+
+
+// Nomenclatura BEM: Block, Element & Modifier
+// 
+// block-name__element-name--modifier-name
+// 
+// Block único en todo el proyecto
+// Element único en su entorno
+// Modifier únicon en su entorno
+
+
+
+
+
+// 1 - UTILITIES
+// Archivos de configuración y funciones, no generan código por si mismos
+
+@import "1-utilities/variables.scss";
+@import "1-utilities/mixins.scss";
+@import "1-utilities/placeholders.scss";
+
+
+
+// 2 - BASE
+// Reglas básicas HTML, elementos sencillos, tipografías e iconos
+
+@import "2-base/reset.scss";
+@import "2-base/font-face.scss";
+@import "2-base/icons.scss";
+@import "2-base/base.scss";
+@import "2-base/tables.scss";
+@import "2-base/forms.scss";
+
+
+
+// 3 - COMPONENTS
+// Módulos más complejos
+
+@import "3-components/buttons.scss";
+@import "3-components/boxes.scss";
+@import "3-components/blockquotes.scss";
+@import "3-components/navs.scss";
+@import "3-components/tabs.scss";
+@import "3-components/toggles.scss";
+@import "3-components/paginations.scss";
+@import "3-components/breadcrumbs.scss";
+@import "3-components/progress.scss";
+@import "3-components/blurbs.scss";
+@import "3-components/teams.scss";
+@import "3-components/testimonials.scss";
+@import "3-components/pricings.scss";
+
+
+
+// 4 - LAYOUT
+// Sistema de grillas y layout
+
+@import "4-layout/grids.scss";
+@import "4-layout/layout.scss";
+
+
+
+// 5 - TEXTURES
+// Clases modificadoras
+
+@import "5-textures/animations.scss";
+@import "5-textures/textures.scss";
+@import "5-textures/fonts.scss";
+@import "5-textures/elements.scss";
+
+
+
+// 6 - PAGES
+
+@import "6-pages/docs.scss";

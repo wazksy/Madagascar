@@ -1,0 +1,39 @@
+//
+// Madagascar - @wazksy
+// _grid-x-large.scss
+//
+
+
+
+
+
+/* Column */
+
+.col--xl-one { width: 100%; }
+.col--xl-one-half { width: 50%; }
+.col--xl-one-third { width: 33.33333333333334%; }
+.col--xl-one-fourth { width: 25%; }
+.col--xl-two-third { width: 66.66666666666667%; }
+.col--xl-three-fourth { width: 75%; }
+
+
+
+/* Offset */
+
+.offset--xl-one-half { margin-left: 50%; }
+.offset--xl-one-third { margin-left: 33.33333333333334%; }
+.offset--xl-one-fourth { margin-left: 25%; }
+.offset--xl-two-third { margin-left: 66.66666666666667%; }
+.offset--xl-three-fourth { margin-left: 75%; }
+
+
+
+/* Visibility */
+
+.xl--show {
+	display: inherit !important;
+}
+
+.xl--hide {
+	display: none !important;
+}

@@ -1,0 +1,166 @@
+//
+// Madagascar - @wazksy
+// _navs.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$NAVS
+\*-------------------------------------------------*/
+
+
+
+/* Navbar */
+
+.navbar {
+	background-color: map-get($colors-palette, grey-100);
+	list-style-type: none;
+	margin: 0;
+	margin-bottom: $gutter;
+	padding: 0;
+	width: 100%;
+	@include clearfix;
+
+	> li {
+		float: left;
+	}
+
+	> li + li > .navbar__link {
+		border-left: 1px solid map-get($colors-palette, white);
+	}
+}
+
+.navbar__link {
+	color: $color-base-font;
+	display: block;
+	margin-bottom: 0;
+	padding: $gutter / 2 $gutter;
+	text-decoration: none;
+
+	&:hover {
+		background-color: map-get($colors-palette, grey-200);
+		text-decoration: none;
+	}
+
+	&:visited {
+		color: inherit;
+	}
+}
+
+.navbar__link--active {
+	background-color: map-get($colors-palette, theme-500);
+	color: map-get($colors-palette, white);
+
+	&:visited {
+		color: map-get($colors-palette, white);
+	}
+}
+
+
+
+/* Navside */
+
+.navside {
+	list-style-type: none;
+	margin: 0;
+	margin-bottom: $gutter;
+	padding: 0;
+	width: 100%;
+	@include clearfix;
+
+	> li + li > .navside__link {
+		border-top: 1px solid $color-base-border;
+	}
+}
+
+.navside__link {
+	color: $color-base-font;
+	display: block;
+	margin-bottom: 0;
+	padding: $gutter / 4 $gutter / 2;
+
+	&:visited {
+		color: inherit;
+	}
+}
+
+.navside__link--active {
+	color: map-get($colors-palette, theme-500);
+
+	&:visited {
+		color: map-get($colors-palette, theme-500);
+	}
+}
+
+
+
+/* Navicons */
+
+.navicons {
+	list-style-type: none;
+	margin: 0;
+	margin-bottom: $gutter;
+	padding: 0;
+	width: 100%;
+	@include clearfix;
+
+	> li {
+		float: left;
+	}
+}
+
+.navicons__link {
+	display: block;
+	margin-bottom: 0;
+	text-decoration: none;
+
+	.icon {
+		font-size: $icon-size-xs;
+		color: map-get($colors-palette, grey-200);
+		display: block;
+		line-height: 1.9em;
+		width: 2em;
+		height: 2em;
+		text-align: center;
+		vertical-align: middle;
+		@include border-radius(50%);
+	}
+
+	&:hover {
+		text-decoration: none;
+
+		.icon {
+			background-color: map-get($colors-palette, grey-100);
+		}
+	}
+}
+
+
+
+
+// /* Nav Icons */
+
+// .nav--icons {
+// 	@extend .nav-inline;
+// 	margin-bottom: $gutter;
+// 	text-align: center;
+
+// 	li {
+// 		display: inline-block;
+// 	}
+
+// 	a {
+// 		color: $color-base-font;
+// 		display: block;
+// 		margin-bottom: $gutter / 2;
+// 		padding: $gutter / 4;
+// 		text-decoration: none;
+
+// 		&:hover {
+// 			color: map-get($colors-palette, theme-500);
+// 		}
+// 	}
+// }

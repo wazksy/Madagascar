@@ -1,0 +1,25 @@
+//
+// Madagascar - @wazksy
+// _elements.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$ELEMENTS
+\*-------------------------------------------------*/
+
+.img--circle {
+	@include border-radius(50%);
+}
+
+.img--rounded {
+	@include border-radius($radius);
+}
+
+.img--responsive {
+	height: auto;
+	width: 100%;
+}

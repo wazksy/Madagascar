@@ -1,0 +1,62 @@
+//
+// Madagascar - @wazksy
+// _teams.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$TEAMS
+\*-------------------------------------------------*/
+
+
+
+/* Team Member */
+
+.team-member {
+	position: relative;
+}
+
+.team-member__link {
+	background-color: map-get($colors-palette, black);
+	height: 240px;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: map-get($index-nivels, over-baseline);
+
+	&:hover {
+		opacity: .5;
+	}
+}
+
+.team-member__photo {
+	background-position: center;
+	background-size: cover;
+	height: 240px;
+	margin-bottom: $gutter;
+	width: 100%;
+}
+
+.team-member__name {
+	font-size: $font-size-l;
+	margin-bottom: $gutter / 4;
+	text-transform: uppercase;
+}
+
+.team-member__position {
+	font-size: $font-size-s;
+}
+
+.team-member__social {
+	border-top: 1px solid $color-base-border;
+	padding-top: $gutter / 2;
+
+	.navicons {
+		margin-left: -10px;
+	}
+}

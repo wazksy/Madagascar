@@ -1,0 +1,118 @@
+//
+// Madagascar - @wazksy
+// _progress.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$PROGRESS
+\*-------------------------------------------------*/
+
+
+
+/* Progress Bar */
+
+.progress-bar {
+	background-color: map-get($colors-palette, grey-100);
+	@include border-radius($radius);
+	height: 20px;
+	margin-bottom: $gutter;
+	@include shadow(inset 0 .2em 0 rgba(0,0,0,.1));
+	width: 100%;
+}
+
+// > span {
+.progress-bar__bar {
+	background-color: map-get($colors-palette, theme-500);
+	@include border-radius($radius);
+	display: block;
+	height: 100%;
+	position: relative;
+	@include shadow(inset 0 .2em 0 rgba(0,0,0,.1));
+
+	&::before {
+		content: attr(data-progress);
+		position: absolute;
+		right: 0;
+		top: -125%;
+	}
+}
+
+.progress-bar__title {
+	margin-bottom: $gutter / 4;
+}
+
+
+
+/* Colors */
+
+.progress-bar--theme {
+	.progress-bar__bar {
+		background-color: map-get($colors-palette, theme-500);
+	}
+}
+
+.progress-bar--secondary-a {
+	.progress-bar__bar {
+		background-color: map-get($colors-palette, secondary-a-500);
+	}
+}
+
+.progress-bar--secondary-b {
+	.progress-bar__bar {
+		background-color: map-get($colors-palette, secondary-b-500);
+	}
+}
+
+.progress-bar--grey {
+	.progress-bar__bar {
+		background-color: map-get($colors-palette, grey-500);
+	}
+}
+
+.progress-bar--error {
+	.progress-bar__bar {
+		background-color: map-get($colors-palette, error-500);
+	}
+}
+
+.progress-bar--info {
+	.progress-bar__bar {
+		background-color: map-get($colors-palette, info-500);
+	}
+}
+
+.progress-bar--success {
+	.progress-bar__bar {
+		background-color: map-get($colors-palette, success-500);
+	}
+}
+
+.progress-bar--warning {
+	.progress-bar__bar {
+		background-color: map-get($colors-palette, warning-500);
+	}
+}
+
+
+
+/* Progress Circle */
+
+// .progress-circle {
+// 	height: 100px;
+// 	width: 100px;
+// 	position: absolute;
+// 	clip: rect(0px, 100px, 100px, 50px);
+// }
+
+// .circle {
+//   width: 80px;
+//   height: 80px;
+//   border: 10px solid green;
+//   border-radius: 50px;
+//   position: absolute;
+//   clip: rect(0px, 50px, 100px, 0px);
+// }

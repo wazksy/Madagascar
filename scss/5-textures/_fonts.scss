@@ -1,0 +1,169 @@
+//
+// Madagascar - @wazksy
+// _fonts.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$FONTS
+\*-------------------------------------------------*/
+
+
+
+/* Sizes */
+
+.txt--xl {
+	font-size: $font-size-xl;
+}
+
+.txt--l {
+	font-size: $font-size-l;
+}
+
+.txt--m {
+	font-size: $font-size-m;
+}
+
+.txt--s {
+	font-size: $font-size-s;
+}
+
+.txt--xs {
+	font-size: $font-size-xs;
+}
+
+
+
+/* Weight */ /* ATENCIÓN: No todas las tipografías Google Fonts aceptan todos los grosores */
+	
+.txt--thin {
+	font-weight: $font-weight-thin;
+}
+
+.txt--light {
+	font-weight: $font-weight-light;
+}
+
+.txt--regular {
+	font-weight: $font-weight-regular;
+}
+
+.txt--medium {
+	font-weight: $font-weight-medium;
+}
+
+.txt--semibold {
+	font-weight: $font-weight-semibold;
+}
+
+.txt--bold {
+	font-weight: $font-weight-bold;
+}
+
+.txt--extrabold {
+	font-weight: $font-weight-extrabold;
+}
+
+.txt--ultrabold {
+	font-weight: $font-weight-ultrabold;
+}
+
+
+
+/* Alings */
+
+.txt--center {
+	text-align: center;
+}
+
+.txt--justify {
+	text-align: justify;
+}
+
+.txt--left {
+	text-align: left;
+}
+
+.txt--right {
+	text-align: right;
+}
+
+
+
+/* Fonts */
+
+.txt--font-alt {
+	font-family: $font-family-alt;
+}
+
+.txt--font-code {
+	font-family: $font-family-code;
+}
+
+
+
+/* Lists */
+
+.list--inline {
+	padding-left: 0;
+	list-style: none;
+
+	li {
+		display: inline-block;
+	}
+}
+
+.list--unstyled {
+	padding-left: 0;
+	list-style: none;
+
+	li {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+
+
+/* Titles */
+
+.title {
+	border-bottom: 1px solid $color-base-border;
+	margin-bottom: $gutter;
+	padding-bottom: $gutter / 4;
+}
+
+.subtitle {
+	font-size: $font-size-l;
+}
+
+.title-section {
+	border-bottom: 1px solid $color-base-border;
+	font-size: $font-size-l;
+	padding: $gutter 0 $gutter 0;
+
+	.title-section__title {
+
+	}
+
+	.title-section__subtitle {
+		font-weight: 300;
+		margin-bottom: 0;
+		text-transform: uppercase;
+	}
+}
+
+
+
+/* Styles */
+
+.txt--shadow {
+	text-shadow: 0 0 1px rgba(0,0,0,0.1);
+}
+
+.txt--uppercase {
+	text-transform: uppercase;
+}

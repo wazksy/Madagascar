@@ -1,0 +1,53 @@
+//
+// Madagascar - @wazksy
+// _docs.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$DOCS
+\*-------------------------------------------------*/
+
+.docs__header {
+	padding: 2.5 * $gutter;
+
+	h1 {
+		font-size: 2.5em;
+	}
+}
+
+/* Content */
+
+.docs__list-colors {
+	li {
+		padding: $gutter / 2;
+
+		small {
+			inline-display: block;
+			float: right;
+		}
+	}
+
+	@each $color, $value in $colors-palette {
+
+		.bck--#{$color} {
+			small::after { content: "#{$value}"; }
+		}
+	}
+
+}
+
+.docs__list-fonts {
+	li.regular {
+		span::after { content: "#{$font-family-base}"; }
+	}
+	li.txt--font-alt {
+		span::after { content: "#{$font-family-alt}"; }
+	}
+	li.txt--font-code {
+		span::after { content: "#{$font-family-code}"; }
+	}
+}

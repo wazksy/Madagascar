@@ -1,0 +1,821 @@
+//
+// Madagascar - @wazksy
+// _variables.scss
+//
+
+
+
+//------------------------------------
+//	$PATHS
+//------------------------------------
+
+	$folder-fonts					: '../fonts/';
+	$folder-images					: '../img';
+
+
+
+//------------------------------------
+//	$BREAKPOINTS
+//------------------------------------
+
+	$bp-xs							: 30em;
+	$bp-s							: 37.5em;
+	$bp-m							: 48em;
+	$bp-l							: 56.25em;
+	$bp-xl							: 68.75em;
+
+
+
+//------------------------------------
+//	$LAYOUT
+//------------------------------------
+
+	$baseline						: 1.5em;
+	$border-width					: 1px;
+	$gutter		 					: 24px;
+	$max-width 						: 1024px;
+	$radius 						: 3px;
+	$input-height					: 30px;
+
+	// z-index
+	$index-nivels: (
+
+		baseline: 1,
+		over-baseline: 2,
+		modal: 3,
+		navigation: 4,
+
+	);
+
+
+
+//------------------------------------
+//	$ANIMATION
+//------------------------------------
+
+	$transition-time				: .3s;
+	$transition-type				: linear;
+	$animation-time					: .8s;
+
+
+
+//------------------------------------
+//	$COLORS PALETTE
+//------------------------------------
+
+
+	
+	$color-theme					: #03a9f4;
+	$color-secondary-a				: #e91e63;
+	$color-secondary-b				: #9c27b0;
+	$color-white					: white;
+	$color-black					: black;
+	$color-alert					: white;
+	$color-error					: #e74c3c;
+	$color-info						: #2ecacc;
+	$color-success					: #2ecc71;
+	$color-warning					: orange;
+
+
+	// Map
+	
+	$colors-palette : (
+
+		// Theme
+		
+		theme-100: lighten($color-theme, 40%),
+		theme-200: lighten($color-theme, 30%),
+		theme-300: lighten($color-theme, 20%),
+		theme-400: lighten($color-theme, 10%),
+		theme-500: $color-theme,
+		theme-600: darken($color-theme, 10%),
+		theme-700: darken($color-theme, 20%),
+		theme-800: darken($color-theme, 30%),
+		theme-900: darken($color-theme, 40%),
+
+		// Secondary A
+
+		secondary-a-100: lighten($color-secondary-a, 40%),
+		secondary-a-200: lighten($color-secondary-a, 30%),
+		secondary-a-300: lighten($color-secondary-a, 20%),
+		secondary-a-400: lighten($color-secondary-a, 10%),
+		secondary-a-500: $color-secondary-a,
+		secondary-a-600: darken($color-secondary-a, 10%),
+		secondary-a-700: darken($color-secondary-a, 20%),
+		secondary-a-800: darken($color-secondary-a, 30%),
+		secondary-a-900: darken($color-secondary-a, 40%),
+
+		// Secondary B
+
+		secondary-b-100: lighten($color-secondary-b, 40%),
+		secondary-b-200: lighten($color-secondary-b, 30%),
+		secondary-b-300: lighten($color-secondary-b, 20%),
+		secondary-b-400: lighten($color-secondary-b, 10%),
+		secondary-b-500: $color-secondary-b,
+		secondary-b-600: darken($color-secondary-b, 10%),
+		secondary-b-700: darken($color-secondary-b, 20%),
+		secondary-b-800: darken($color-secondary-b, 30%),
+		secondary-b-900: darken($color-secondary-b, 40%),
+
+		// Grey - cuando el blanco no es blanco o el negro no es negro
+
+		white: $color-white,
+		grey-100: lighten($color-black, 90%),
+		grey-200: lighten($color-black, 80%),
+		grey-300: lighten($color-black, 70%),
+		grey-400: lighten($color-black, 60%),
+		grey-500: lighten($color-black, 50%),
+		grey-600: lighten($color-black, 40%),
+		grey-700: lighten($color-black, 30%),
+		grey-800: lighten($color-black, 20%),
+		grey-900: lighten($color-black, 10%),
+		black: $color-black,
+
+		// Error
+
+		error-100: lighten($color-error, 40%),
+		error-200: lighten($color-error, 30%),
+		error-300: lighten($color-error, 20%),
+		error-400: lighten($color-error, 10%),
+		error-500: $color-error,
+		error-600: darken($color-error, 10%),
+		error-700: darken($color-error, 20%),
+		error-800: darken($color-error, 30%),
+		error-900: darken($color-error, 40%),
+
+		// Info
+
+		info-100: lighten($color-info, 40%),
+		info-200: lighten($color-info, 30%),
+		info-300: lighten($color-info, 20%),
+		info-400: lighten($color-info, 10%),
+		info-500: $color-info,
+		info-600: darken($color-info, 10%),
+		info-700: darken($color-info, 20%),
+		info-800: darken($color-info, 30%),
+		info-900: darken($color-info, 40%),
+
+		// Success
+
+		success-100: lighten($color-success, 40%),
+		success-200: lighten($color-success, 30%),
+		success-300: lighten($color-success, 20%),
+		success-400: lighten($color-success, 10%),
+		success-500: $color-success,
+		success-600: darken($color-success, 10%),
+		success-700: darken($color-success, 20%),
+		success-800: darken($color-success, 30%),
+		success-900: darken($color-success, 40%),
+
+		// Warning
+
+		warning-100: lighten($color-warning, 40%),
+		warning-200: lighten($color-warning, 30%),
+		warning-300: lighten($color-warning, 20%),
+		warning-400: lighten($color-warning, 10%),
+		warning-500: $color-warning,
+		warning-600: darken($color-warning, 10%),
+		warning-700: darken($color-warning, 20%),
+		warning-800: darken($color-warning, 30%),
+		warning-900: darken($color-warning, 40%),
+
+	);
+
+
+
+//------------------------------------
+//	$COLORS
+//------------------------------------
+
+
+	// Texture
+	
+	$color-base-background 			: map-get($colors-palette, white-500);
+	$color-base-border				: map-get($colors-palette, grey-200);
+	$color-code-background			: map-get($colors-palette, grey-100);
+	$color-button-background		: map-get($colors-palette, theme-500);
+	$color-button-hover-background	: map-get($colors-palette, theme-600);
+
+
+
+	// Text
+	
+	$color-base-font				: map-get($colors-palette, grey-700);
+	$color-alt-font					: map-get($colors-palette, grey-500);
+	$color-code-font				: inhert;
+
+
+
+	// Links
+	
+	$color-link						: map-get($colors-palette, theme-500);
+	$color-link-hover				: darken($color-link, 10%);
+	$color-link-visited				: $color-link;
+	$color-link-focus				: red;
+
+
+
+	// Tables
+	
+	$color-table-background			: map-get($colors-palette, white);
+	$color-table-border				: $color-base-border;
+	$color-table-stripe				: map-get($colors-palette, theme-100);
+	$color-table-hover				: map-get($colors-palette, theme-200);
+
+
+
+	// Forms
+	
+	$color-input-background			: map-get($colors-palette, white-500);
+	$color-input-font				: $color-base-font;
+	$color-input-border				: $color-base-border;
+	$color-input-hover-border		: map-get($colors-palette, theme-500);
+	$color-input-focus-border		: map-get($colors-palette, theme-800);
+	$color-input-disabled-background: map-get($colors-palette, grey-200);
+
+
+
+	// Social
+	
+	$facebook						: rgb(59, 89, 182);
+	$twitter						: rgb(64, 153, 255);
+	$google-plus					: rgb(221, 75, 57);
+	$pinterest						: rgb(203, 32, 39);
+	$skype							: rgb(18,165,244);
+	$spotify						: rgb(129,183,26);
+	$instagram						: #4E433C;
+	$tumblr							: #2B4964;
+	$vimeo							: #86B32D;
+	$soundcloud						: #f76600;
+	$youtube						: #FF3333;
+	$linkedin						: #4875B4;
+	$flickr							: #FE0883;
+	$foursquare						: #8FD400;
+
+	
+
+//------------------------------------
+//	$FONTS
+//------------------------------------
+
+	$font-size-xl					: 1.4rem;
+	$font-size-l					: 1.2rem;
+	$font-size-m					: .95rem;
+	$font-size-s					: .8rem;
+	$font-size-xs					: .7rem;
+
+	// Atención! No todas las tipografías aceptan todos los grosores
+
+	$font-weight-thin				: 100;
+	$font-weight-light				: 300;
+	$font-weight-regular			: 400;
+	$font-weight-medium				: 500;
+	$font-weight-semibold			: 600;
+	$font-weight-bold				: 700;
+	$font-weight-extrabold			: 800;
+	$font-weight-ultrabold			: 900;
+
+	$font-family-base				: 'Open Sans', sans-serif;
+	$font-size-base					: $font-size-m;
+
+	$font-family-secondary			: inhert;
+	$font-size-secondary			: inhert;
+
+	$font-family-alt				: Georgia, Times;
+	$font-size-alt					: inhert;
+
+	$font-family-code				: "Courier New", monospace;
+	$font-size-code					: inhert;
+
+	$font-family-input				: $font-family-base;
+	$font-size-input				: .8rem;
+
+	$font-family-heading			: $font-family-base;
+	$font-size-h1					: 1.8rem;
+	$font-size-h2					: 1.6rem;
+	$font-size-h3					: 1.4rem;
+	$font-size-h4					: 1.2rem;
+	$font-size-h5					: 1rem;
+	$font-size-h6					: 1rem;
+
+	$line-height 					: 1.2;
+
+
+
+//------------------------------------
+//	$ICONS
+//------------------------------------
+
+	$icon-size-xs					: 1.2rem;
+	$icon-size-s					: 2rem;
+	$icon-size-m					: 3rem;
+	$icon-size-l					: 4rem;
+	$icon-size-xl					: 5rem;
+
+	$icons : (
+
+		fa-glass: "\f000",
+		fa-music: "\f001",
+		fa-search: "\f002",
+		fa-envelope-o: "\f003",
+		fa-heart: "\f004",
+		fa-star: "\f005",
+		fa-star-o: "\f006",
+		fa-user: "\f007",
+		fa-film: "\f008",
+		fa-th-large: "\f009",
+		fa-th: "\f00a",
+		fa-th-list: "\f00b",
+		fa-check: "\f00c",
+		fa-times: "\f00d",
+		fa-search-plus: "\f00e",
+		fa-search-minus: "\f010",
+		fa-power-off: "\f011",
+		fa-signal: "\f012",
+		fa-gear: "\f013", // repetido
+		fa-cog: "\f013",
+		fa-trash-o: "\f014",
+		fa-home: "\f015",
+		fa-file-o: "\f016",
+		fa-clock-o: "\f017",
+		fa-road: "\f018",
+		fa-download: "\f019",
+		fa-arrow-circle-o-down: "\f01a",
+		fa-arrow-circle-o-up: "\f01b",
+		fa-inbox: "\f01c",
+		fa-play-circle-o: "\f01d",
+		fa-rotate-right: "\f01e", // repetido
+		fa-repeat: "\f01e",
+		fa-refresh: "\f021",
+		fa-list-alt: "\f022",
+		fa-lock: "\f023",
+		fa-flag: "\f024",
+		fa-headphones: "\f025",
+		fa-volume-off: "\f026",
+		fa-volume-down: "\f027",
+		fa-volume-up: "\f028",
+		fa-qrcode: "\f029",
+		fa-barcode: "\f02a",
+		fa-tag: "\f02b",
+		fa-tags: "\f02c",
+		fa-book: "\f02d",
+		fa-bookmark: "\f02e",
+		fa-print: "\f02f",
+		fa-camera: "\f030",
+		fa-font: "\f031",
+		fa-bold: "\f032",
+		fa-italic: "\f033",
+		fa-text-height: "\f034",
+		fa-text-width: "\f035",
+		fa-align-left: "\f036",
+		fa-align-center: "\f037",
+		fa-align-right: "\f038",
+		fa-align-justify: "\f039",
+		fa-list: "\f03a",
+		fa-dedent: "\f03b", // repetido
+		fa-outdent: "\f03b",
+		fa-indent: "\f03c",
+		fa-video-camera: "\f03d",
+		fa-photo: "\f03e", // repetido
+		fa-image: "\f03e", // repetido
+		fa-picture-o: "\f03e",
+		fa-pencil: "\f040",
+		fa-map-marker: "\f041",
+		fa-adjust: "\f042",
+		fa-tint: "\f043",
+		fa-edit: "\f044", // repetido
+		fa-pencil-square-o: "\f044",
+		fa-share-square-o: "\f045",
+		fa-check-square-o: "\f046",
+		fa-arrows: "\f047",
+		fa-step-backward: "\f048",
+		fa-fast-backward: "\f049",
+		fa-backward: "\f04a",
+		fa-play: "\f04b",
+		fa-pause: "\f04c",
+		fa-stop: "\f04d",
+		fa-forward: "\f04e",
+		fa-fast-forward: "\f050",
+		fa-step-forward: "\f051",
+		fa-eject: "\f052",
+		fa-chevron-left: "\f053",
+		fa-chevron-right: "\f054",
+		fa-plus-circle: "\f055",
+		fa-minus-circle: "\f056",
+		fa-times-circle: "\f057",
+		fa-check-circle: "\f058",
+		fa-question-circle: "\f059",
+		fa-info-circle: "\f05a",
+		fa-crosshairs: "\f05b",
+		fa-times-circle-o: "\f05c",
+		fa-check-circle-o: "\f05d",
+		fa-ban: "\f05e",
+		fa-arrow-left: "\f060",
+		fa-arrow-right: "\f061",
+		fa-arrow-up: "\f062",
+		fa-arrow-down: "\f063",
+		fa-mail-forward: "\f064", // repetido
+		fa-share: "\f064",
+		fa-expand: "\f065",
+		fa-compress: "\f066",
+		fa-plus: "\f067",
+		fa-minus: "\f068",
+		fa-asterisk: "\f069",
+		fa-exclamation-circle: "\f06a",
+		fa-gift: "\f06b",
+		fa-leaf: "\f06c",
+		fa-fire: "\f06d",
+		fa-eye: "\f06e",
+		fa-eye-slash: "\f070",
+		fa-warning: "\f071", // repetido
+		fa-exclamation-triangle: "\f071",
+		fa-plane: "\f072",
+		fa-calendar: "\f073",
+		fa-random: "\f074",
+		fa-comment: "\f075",
+		fa-magnet: "\f076",
+		fa-chevron-up: "\f077",
+		fa-chevron-down: "\f078",
+		fa-retweet: "\f079",
+		fa-shopping-cart: "\f07a",
+		fa-folder: "\f07b",
+		fa-folder-open: "\f07c",
+		fa-arrows-v: "\f07d",
+		fa-arrows-h: "\f07e",
+		fa-bar-chart-o: "\f080",
+		fa-twitter-square: "\f081",
+		fa-facebook-square: "\f082",
+		fa-camera-retro: "\f083",
+		fa-key: "\f084",
+		fa-gears: "\f085", // repetido
+		fa-cogs: "\f085",
+		fa-comments: "\f086",
+		fa-thumbs-o-up: "\f087",
+		fa-thumbs-o-down: "\f088",
+		fa-star-half: "\f089",
+		fa-heart-o: "\f08a",
+		fa-sign-out: "\f08b",
+		fa-linkedin-square: "\f08c",
+		fa-thumb-tack: "\f08d",
+		fa-external-link: "\f08e",
+		fa-sign-in: "\f090",
+		fa-trophy: "\f091",
+		fa-github-square: "\f092",
+		fa-upload: "\f093",
+		fa-lemon-o: "\f094",
+		fa-phone: "\f095",
+		fa-square-o: "\f096",
+		fa-bookmark-o: "\f097",
+		fa-phone-square: "\f098",
+		fa-twitter: "\f099",
+		fa-facebook: "\f09a",
+		fa-github: "\f09b",
+		fa-unlock: "\f09c",
+		fa-credit-card: "\f09d",
+		fa-rss: "\f09e",
+		fa-hdd-o: "\f0a0",
+		fa-bullhorn: "\f0a1",
+		fa-bell: "\f0f3",
+		fa-certificate: "\f0a3",
+		fa-hand-o-right: "\f0a4",
+		fa-hand-o-left: "\f0a5",
+		fa-hand-o-up: "\f0a6",
+		fa-hand-o-down: "\f0a7",
+		fa-arrow-circle-left: "\f0a8",
+		fa-arrow-circle-right: "\f0a9",
+		fa-arrow-circle-up: "\f0aa",
+		fa-arrow-circle-down: "\f0ab",
+		fa-globe: "\f0ac",
+		fa-wrench: "\f0ad",
+		fa-tasks: "\f0ae",
+		fa-filter: "\f0b0",
+		fa-briefcase: "\f0b1",
+		fa-arrows-alt: "\f0b2",
+		fa-group: "\f0c0", // repetido
+		fa-users: "\f0c0",
+		fa-chain: "\f0c1", // repetido
+		fa-link: "\f0c1",
+		fa-cloud: "\f0c2",
+		fa-flask: "\f0c3",
+		fa-cut: "\f0c4", // repetido
+		fa-scissors: "\f0c4",
+		fa-copy: "\f0c5", // repetido
+		fa-files-o: "\f0c5",
+		fa-paperclip: "\f0c6",
+		fa-save: "\f0c7", // repetido
+		fa-floppy-o: "\f0c7",
+		fa-square: "\f0c8",
+		fa-navicon: "\f0c9", // repetido
+		fa-reorder: "\f0c9", // repetido
+		fa-bars: "\f0c9",
+		fa-list-ul: "\f0ca",
+		fa-list-ol: "\f0cb",
+		fa-strikethrough: "\f0cc",
+		fa-underline: "\f0cd",
+		fa-table: "\f0ce",
+		fa-magic: "\f0d0",
+		fa-truck: "\f0d1",
+		fa-pinterest: "\f0d2",
+		fa-pinterest-square: "\f0d3",
+		fa-google-plus-square: "\f0d4",
+		fa-google-plus: "\f0d5",
+		fa-money: "\f0d6",
+		fa-caret-down: "\f0d7",
+		fa-caret-up: "\f0d8",
+		fa-caret-left: "\f0d9",
+		fa-caret-right: "\f0da",
+		fa-columns: "\f0db",
+		fa-unsorted: "\f0dc", // repetido
+		fa-sort: "\f0dc",
+		fa-sort-down: "\f0dd", // repetido
+		fa-sort-desc: "\f0dd",
+		fa-sort-up: "\f0de", // repetido
+		fa-sort-asc: "\f0de",
+		fa-envelope: "\f0e0",
+		fa-linkedin: "\f0e1",
+		fa-rotate-left: "\f0e2", // repetido
+		fa-undo: "\f0e2",
+		fa-legal: "\f0e3", // repetido
+		fa-gavel: "\f0e3",
+		fa-dashboard: "\f0e4", // repetido
+		fa-tachometer: "\f0e4",
+		fa-comment-o: "\f0e5",
+		fa-comments-o: "\f0e6",
+		fa-flash: "\f0e7", // repetido
+		fa-bolt: "\f0e7",
+		fa-sitemap: "\f0e8",
+		fa-umbrella: "\f0e9",
+		fa-paste: "\f0ea", // repetido
+		fa-clipboard: "\f0ea",
+		fa-lightbulb-o: "\f0eb",
+		fa-exchange: "\f0ec",
+		fa-cloud-download: "\f0ed",
+		fa-cloud-upload: "\f0ee",
+		fa-user-md: "\f0f0",
+		fa-stethoscope: "\f0f1",
+		fa-suitcase: "\f0f2",
+		fa-bell-o: "\f0a2",
+		fa-coffee: "\f0f4",
+		fa-cutlery: "\f0f5",
+		fa-file-text-o: "\f0f6",
+		fa-building-o: "\f0f7",
+		fa-hospital-o: "\f0f8",
+		fa-ambulance: "\f0f9",
+		fa-medkit: "\f0fa",
+		fa-fighter-jet: "\f0fb",
+		fa-beer: "\f0fc",
+		fa-h-square: "\f0fd",
+		fa-plus-square: "\f0fe",
+		fa-angle-double-left: "\f100",
+		fa-angle-double-right: "\f101",
+		fa-angle-double-up: "\f102",
+		fa-angle-double-down: "\f103",
+		fa-angle-left: "\f104",
+		fa-angle-right: "\f105",
+		fa-angle-up: "\f106",
+		fa-angle-down: "\f107",
+		fa-desktop: "\f108",
+		fa-laptop: "\f109",
+		fa-tablet: "\f10a",
+		fa-mobile-phone: "\f10b", // repetido
+		fa-mobile: "\f10b",
+		fa-circle-o: "\f10c",
+		fa-quote-left: "\f10d",
+		fa-quote-right: "\f10e",
+		fa-spinner: "\f110",
+		fa-circle: "\f111",
+		fa-mail-reply: "\f112", // repetido
+		fa-reply: "\f112",
+		fa-github-alt: "\f113",
+		fa-folder-o: "\f114",
+		fa-folder-open-o: "\f115",
+		fa-smile-o: "\f118",
+		fa-frown-o: "\f119",
+		fa-meh-o: "\f11a",
+		fa-gamepad: "\f11b",
+		fa-keyboard-o: "\f11c",
+		fa-flag-o: "\f11d",
+		fa-flag-checkered: "\f11e",
+		fa-terminal: "\f120",
+		fa-code: "\f121",
+		fa-mail-reply-all: "\f122", // repetido
+		fa-reply-all: "\f122",
+		fa-star-half-empty: "\f123", // repetido
+		fa-star-half-full: "\f123", // repetido
+		fa-star-half-o: "\f123",
+		fa-location-arrow: "\f124",
+		fa-crop: "\f125",
+		fa-code-fork: "\f126",
+		fa-unlink: "\f127", // repetido
+		fa-chain-broken: "\f127",
+		fa-question: "\f128",
+		fa-info: "\f129",
+		fa-exclamation: "\f12a",
+		fa-superscript: "\f12b",
+		fa-subscript: "\f12c",
+		fa-eraser: "\f12d",
+		fa-puzzle-piece: "\f12e",
+		fa-microphone: "\f130",
+		fa-microphone-slash: "\f131",
+		fa-shield: "\f132",
+		fa-calendar-o: "\f133",
+		fa-fire-extinguisher: "\f134",
+		fa-rocket: "\f135",
+		fa-maxcdn: "\f136",
+		fa-chevron-circle-left: "\f137",
+		fa-chevron-circle-right: "\f138",
+		fa-chevron-circle-up: "\f139",
+		fa-chevron-circle-down: "\f13a",
+		fa-html5: "\f13b",
+		fa-css3: "\f13c",
+		fa-anchor: "\f13d",
+		fa-unlock-alt: "\f13e",
+		fa-bullseye: "\f140",
+		fa-ellipsis-h: "\f141",
+		fa-ellipsis-v: "\f142",
+		fa-rss-square: "\f143",
+		fa-play-circle: "\f144",
+		fa-ticket: "\f145",
+		fa-minus-square: "\f146",
+		fa-minus-square-o: "\f147",
+		fa-level-up: "\f148",
+		fa-level-down: "\f149",
+		fa-check-square: "\f14a",
+		fa-pencil-square: "\f14b",
+		fa-external-link-square: "\f14c",
+		fa-share-square: "\f14d",
+		fa-compass: "\f14e",
+		fa-toggle-down: "\f150", // repetido
+		fa-caret-square-o-down: "\f150",
+		fa-toggle-up: "\f151", // repetido
+		fa-caret-square-o-up: "\f151",
+		fa-toggle-right: "\f152", // repetido
+		fa-caret-square-o-right: "\f152",
+		fa-euro: "\f153", // repetido
+		fa-eur: "\f153",
+		fa-gbp: "\f154",
+		fa-dollar: "\f155", // repetido
+		fa-usd: "\f155",
+		fa-rupee: "\f156", // repetido
+		fa-inr: "\f156",
+		fa-cny: "\f157", // repetido
+		fa-rmb: "\f157", // repetido
+		fa-yen: "\f157", // repetido
+		fa-jpy: "\f157",
+		fa-ruble: "\f158", // repetido
+		fa-rouble: "\f158", // repetido
+		fa-rub: "\f158",
+		fa-won: "\f159", // repetido
+		fa-krw: "\f159",
+		fa-bitcoin: "\f15a", // repetido
+		fa-btc: "\f15a",
+		fa-file: "\f15b",
+		fa-file-text: "\f15c",
+		fa-sort-alpha-asc: "\f15d",
+		fa-sort-alpha-desc: "\f15e",
+		fa-sort-amount-asc: "\f160",
+		fa-sort-amount-desc: "\f161",
+		fa-sort-numeric-asc: "\f162",
+		fa-sort-numeric-desc: "\f163",
+		fa-thumbs-up: "\f164",
+		fa-thumbs-down: "\f165",
+		fa-youtube-square: "\f166",
+		fa-youtube: "\f167",
+		fa-xing: "\f168",
+		fa-xing-square: "\f169",
+		fa-youtube-play: "\f16a",
+		fa-dropbox: "\f16b",
+		fa-stack-overflow: "\f16c",
+		fa-instagram: "\f16d",
+		fa-flickr: "\f16e",
+		fa-adn: "\f170",
+		fa-bitbucket: "\f171",
+		fa-bitbucket-square: "\f172",
+		fa-tumblr: "\f173",
+		fa-tumblr-square: "\f174",
+		fa-long-arrow-down: "\f175",
+		fa-long-arrow-up: "\f176",
+		fa-long-arrow-left: "\f177",
+		fa-long-arrow-right: "\f178",
+		fa-apple: "\f179",
+		fa-windows: "\f17a",
+		fa-android: "\f17b",
+		fa-linux: "\f17c",
+		fa-dribbble: "\f17d",
+		fa-skype: "\f17e",
+		fa-foursquare: "\f180",
+		fa-trello: "\f181",
+		fa-female: "\f182",
+		fa-male: "\f183",
+		fa-gittip: "\f184",
+		fa-sun-o: "\f185",
+		fa-moon-o: "\f186",
+		fa-archive: "\f187",
+		fa-bug: "\f188",
+		fa-vk: "\f189",
+		fa-weibo: "\f18a",
+		fa-renren: "\f18b",
+		fa-pagelines: "\f18c",
+		fa-stack-exchange: "\f18d",
+		fa-arrow-circle-o-right: "\f18e",
+		fa-arrow-circle-o-left: "\f190",
+		fa-toggle-left: "\f191", // repetido
+		fa-caret-square-o-left: "\f191",
+		fa-dot-circle-o: "\f192",
+		fa-wheelchair: "\f193",
+		fa-vimeo-square: "\f194",
+		fa-turkish-lira: "\f195", // repetido
+		fa-try: "\f195",
+		fa-plus-square-o: "\f196",
+		fa-space-shuttle: "\f197",
+		fa-slack: "\f198",
+		fa-envelope-square: "\f199",
+		fa-wordpress: "\f19a",
+		fa-openid: "\f19b",
+		fa-institution: "\f19c", // repetido
+		fa-bank: "\f19c", // repetido
+		fa-university: "\f19c",
+		fa-mortar-board: "\f19d", // repetido
+		fa-graduation-cap: "\f19d",
+		fa-yahoo: "\f19e",
+		fa-google: "\f1a0",
+		fa-reddit: "\f1a1",
+		fa-reddit-square: "\f1a2",
+		fa-stumbleupon-circle: "\f1a3",
+		fa-stumbleupon: "\f1a4",
+		fa-delicious: "\f1a5",
+		fa-digg: "\f1a6",
+		fa-pied-piper-square: "\f1a7", // repetido
+		fa-pied-piper: "\f1a7",
+		fa-pied-piper-alt: "\f1a8",
+		fa-drupal: "\f1a9",
+		fa-joomla: "\f1aa",
+		fa-language: "\f1ab",
+		fa-fax: "\f1ac",
+		fa-building: "\f1ad",
+		fa-child: "\f1ae",
+		fa-paw: "\f1b0",
+		fa-spoon: "\f1b1",
+		fa-cube: "\f1b2",
+		fa-cubes: "\f1b3",
+		fa-behance: "\f1b4",
+		fa-behance-square: "\f1b5",
+		fa-steam: "\f1b6",
+		fa-steam-square: "\f1b7",
+		fa-recycle: "\f1b8",
+		fa-automobile: "\f1b9", // repetido
+		fa-car: "\f1b9",
+		fa-cab: "\f1ba", // repetido
+		fa-taxi: "\f1ba",
+		fa-tree: "\f1bb",
+		fa-spotify: "\f1bc",
+		fa-deviantart: "\f1bd",
+		fa-soundcloud: "\f1be",
+		fa-database: "\f1c0",
+		fa-file-pdf-o: "\f1c1",
+		fa-file-word-o: "\f1c2",
+		fa-file-excel-o: "\f1c3",
+		fa-file-powerpoint-o: "\f1c4",
+		fa-file-photo-o: "\f1c5", // repetido
+		fa-file-picture-o: "\f1c5", // repetido
+		fa-file-image-o: "\f1c5",
+		fa-file-zip-o: "\f1c6", // repetido
+		fa-file-archive-o: "\f1c6",
+		fa-file-sound-o: "\f1c7", // repetido
+		fa-file-audio-o: "\f1c7",
+		fa-file-movie-o: "\f1c8", // repetido
+		fa-file-video-o: "\f1c8",
+		fa-file-code-o: "\f1c9",
+		fa-vine: "\f1ca",
+		fa-codepen: "\f1cb",
+		fa-jsfiddle: "\f1cc",
+		fa-life-bouy: "\f1cd", // repetido
+		fa-life-saver: "\f1cd", // repetido
+		fa-support: "\f1cd", // repetido
+		fa-life-ring: "\f1cd",
+		fa-circle-o-notch: "\f1ce",
+		fa-ra: "\f1d0", // repetido
+		fa-rebel: "\f1d0",
+		fa-ge: "\f1d1", // repetido
+		fa-empire: "\f1d1",
+		fa-git-square: "\f1d2",
+		fa-git: "\f1d3",
+		fa-hacker-news: "\f1d4",
+		fa-tencent-weibo: "\f1d5",
+		fa-qq: "\f1d6",
+		fa-wechat: "\f1d7", // repetido
+		fa-weixin: "\f1d7",
+		fa-send: "\f1d8", // repetido
+		fa-paper-plane: "\f1d8",
+		fa-send-o: "\f1d9", // repetido
+		fa-paper-plane-o: "\f1d9",
+		fa-history: "\f1da",
+		fa-circle-thin: "\f1db",
+		fa-header: "\f1dc",
+		fa-paragraph: "\f1dd",
+		fa-sliders: "\f1de",
+		fa-share-alt: "\f1e0",
+		fa-share-alt-square: "\f1e1",
+		fa-bomb: "\f1e2",
+			
+	);

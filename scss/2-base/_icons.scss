@@ -1,0 +1,108 @@
+//
+// Madagascar - @wazksy
+// _icons.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$ICONS
+\*-------------------------------------------------*/
+
+.icon:before {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* Circle */
+
+.icon--circle,
+.icon--border {
+	display: block;
+	line-height: 1.9em;
+	width: 2em;
+	height: 2em;
+	text-align: center;
+	vertical-align: middle;
+	@include border-radius(50%);
+}
+
+.icon--circle {
+	background-color: map-get($colors-palette, theme-500);
+	color: map-get($colors-palette, white);
+}
+
+.icon--border {
+	border: .1em solid $color-base-border;
+	background-color: none;
+	line-height: 1.8em;
+}
+
+
+
+/* Sizes */
+
+.icon--xs {
+	font-size: $icon-size-xs;
+
+	&.icon--circle,
+	&.icon--border {
+		font-size: $icon-size-xs / 1.5;
+	}
+}
+
+.icon--s {
+	font-size: $icon-size-s;
+
+	&.icon--circle,
+	&.icon--border {
+		font-size: $icon-size-s / 1.5;
+	}
+}
+
+.icon--m {
+	font-size: $icon-size-m;
+
+	&.icon--circle,
+	&.icon--border {
+		font-size: $icon-size-m / 1.5;
+	}
+}
+
+.icon--l {
+	font-size: $icon-size-l;
+
+	&.icon--circle,
+	&.icon--border {
+		font-size: $icon-size-l / 1.5;
+	}
+}
+
+.icon--xl {
+	font-size: $icon-size-xl;
+
+	&.icon--circle,
+	&.icon--border {
+		font-size: $icon-size-xl / 1.5;
+	}
+}
+
+
+
+/* Icons */
+
+@each $icon, $value in $icons {
+
+	.icon--#{$icon}:before { content: $value; }
+
+}

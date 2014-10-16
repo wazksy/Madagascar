@@ -1,0 +1,68 @@
+//
+// Madagascar - @wazksy
+// _tabs.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$TABS
+\*-------------------------------------------------*/
+
+.tab {
+	margin-bottom: $gutter;
+}
+
+.tab__nav {
+	background-color: map-get($colors-palette, grey-100);
+	list-style-type: none;
+	margin: 0;
+	margin-bottom: $gutter / 2;
+	padding: 0;
+	width: 100%;
+	@include clearfix;
+
+	> li {
+		float: left;
+	}
+
+	> li + li > .tab__link {
+		border-left: 1px solid map-get($colors-palette, white);
+	}
+}
+
+.tab__link {
+	color: $color-base-font;
+	display: block;
+	margin-bottom: 0;
+	padding: $gutter / 2 $gutter;
+	text-decoration: none;
+
+	&:hover {
+		background-color: map-get($colors-palette, grey-200);
+		text-decoration: none;
+	}
+
+	&:visited {
+		color: inherit;
+	}
+}
+
+.tab__link--active {
+	background-color: map-get($colors-palette, theme-500);
+	color: map-get($colors-palette, white);
+
+	&:visited {
+		color: map-get($colors-palette, white);
+	}
+}
+
+.tab__tab {
+	display: none;
+}
+
+.tab__tab--active {
+	display: block;
+}

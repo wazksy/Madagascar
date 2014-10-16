@@ -1,0 +1,52 @@
+//
+// Madagascar - @wazksy
+// _testimonials.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$TESTIMONIALS
+\*-------------------------------------------------*/
+
+.testimonial {
+	background-color: map-get($colors-palette, grey-100);
+	color: map-get($colors-palette, grey-500);
+	margin-bottom: $gutter;
+	padding: $gutter;
+	position: relative;
+	width: 100%;
+	font-family: $font-family-base;
+	@include clearfix;
+}
+
+.testimonial__icon {
+	bottom: $gutter / 2;
+	display: block;
+	position: absolute;
+	right: $gutter / 2;
+	color: map-get($colors-palette, white);
+	border-color: map-get($colors-palette, white);
+}
+
+.testimonial__text {
+	font-size: $font-size-xl;
+}
+
+.testimonial__author {
+	font-weight: bold;
+
+	&:before {
+		content: '\2014 \00A0';
+	}
+
+	&:after {
+		content: ', ';
+	}
+}
+
+.testimonial__city:before {
+	content: ', ';
+}

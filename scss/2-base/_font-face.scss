@@ -1,0 +1,66 @@
+//
+// Madagascar - @wazksy
+// _font-face.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$FONT-FACE
+\*-------------------------------------------------*/
+
+
+
+/* Open Sans */
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Open Sans Light'), local('OpenSans-Light'), url(#{$folder-fonts}open-sans/OpenSans-Light.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans'), local('OpenSans'), url(#{$folder-fonts}open-sans/OpenSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(#{$folder-fonts}open-sans/OpenSans-Semibold.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Open Sans Bold'), local('OpenSans-Bold'), url(#{$folder-fonts}open-sans/OpenSans-Bold.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 800;
+	src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(#{$folder-fonts}open-sans/OpenSans-Extrabold.ttf) format('truetype');
+}
+
+
+
+/* Awesome (icons) */
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url(#{$folder-fonts}awesome/fontawesome-webfont.eot?v=4.1.0);
+	src: url(#{$folder-fonts}awesome/fontawesome-webfont.eot?#iefix&v=4.1.0) format('embedded-opentype'),
+	url(#{$folder-fonts}awesome/fontawesome-webfont.woff?v=4.1.0) format('woff'),
+	url(#{$folder-fonts}awesome/fontawesome-webfont.ttf?v=4.1.0) format('truetype'),
+	url(#{$folder-fonts}awesome/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular) format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

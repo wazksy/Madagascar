@@ -1,0 +1,85 @@
+//
+// Madagascar - @wazksy
+// _toggles.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$TOGGLES
+\*-------------------------------------------------*/
+
+.toggle,
+.toggle--accordion {
+	margin-bottom: $gutter;
+}
+
+.toggle__nav,
+.toggle--accordion__nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	@include clearfix;
+
+	> li {
+		position: relative;
+	}
+}
+
+.toggle__link,
+.toggle--accordion__link {
+	background-color: map-get($colors-palette, grey-100);
+	color: $color-base-font;
+	display: block;
+	margin-bottom: $gutter / 2;
+	padding: $gutter / 2 $gutter;
+	text-decoration: none;
+
+	&:before {
+		@extend .icon;
+		top: $gutter / 2;
+		content: map-get($icons, fa-plus-circle);
+		display: block;
+		font-size: $font-size-l;
+		position: absolute;
+		right: $gutter / 2;
+	}
+
+	&:hover {
+		background-color: map-get($colors-palette, grey-200);
+		text-decoration: none;
+		color: inherit;
+	}
+
+	&:visited {
+		color: inherit;
+	}
+}
+
+.toggle__link--active,
+.toggle--accordion__link--active {
+	background-color: map-get($colors-palette, theme-500);
+	color: map-get($colors-palette, white);
+
+	&:before {
+		content: map-get($icons, fa-minus-circle);
+	}
+
+	&:visited {
+		color: map-get($colors-palette, white);
+	}
+}
+
+.toggle__content,
+.toggle--accordion__content {
+	margin-bottom: $gutter / 2;
+	display: none;
+}
+
+.toggle__content--active,
+.toggle--accordion__content--active {
+	display: block;
+}

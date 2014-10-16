@@ -1,0 +1,55 @@
+//
+// Madagascar - @wazksy
+// _blurs.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$BLURS
+\*-------------------------------------------------*/
+
+.blurb,
+.blurb--inline {
+	
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.blurb__title {
+	font-size: $font-size-xl;
+	font-weight: $font-weight-light;
+	margin-bottom: $gutter / 4;
+	text-transform: uppercase;
+}
+
+.blurb {
+	margin-bottom: $gutter * 3;
+	text-align: center;
+
+	> .icon {
+		display: block;
+  		margin: 0 auto;
+  		margin-bottom: $gutter * 1.2;
+  		text-align: center;
+	}
+}
+
+
+
+/* .blurb--inline */
+
+.blurb--inline {
+	margin-bottom: $gutter;
+	padding-left: $gutter * 2.5;
+	position: relative;
+
+	> .icon {
+		position: absolute;
+		top: -10px;
+		left: 0;
+	}
+}

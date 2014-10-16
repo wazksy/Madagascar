@@ -1,0 +1,65 @@
+//
+// Madagascar - @wazksy
+// _pricings.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$PRICINGS
+\*-------------------------------------------------*/
+
+.pricing {
+	margin-top: $gutter;
+	margin-bottom: $gutter;
+}
+
+.pricing__col {
+	float: left;
+	text-align: center;
+	width: 100%;
+	border-left: 1px solid $color-base-border;
+	border-top: 1px solid $color-base-border;
+	border-bottom: 1px solid $color-base-border;
+}
+
+.pricing__col--highlight {
+	margin-top: -10px;
+}
+
+.pricing__col:last-child {
+	border-right: 1px solid $color-base-border;
+}
+
+.pricing--col-2 .pricing__col { width: 50%; }
+.pricing--col-3 .pricing__col { width: 33.33333333333334%%; }
+.pricing--col-4 .pricing__col { width: 25%; }
+.pricing--col-5 .pricing__col { width: 20%; }
+.pricing--col-6 .pricing__col { width: 16.66666666666667%; }
+
+.pricing__head {
+	padding: $gutter / 2;
+	border-bottom: 1px solid $color-base-border;
+}
+
+.pricing__title {
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+.pricing__price {
+	border-bottom: 1px solid $color-base-border;
+	padding: $gutter / 2;
+}
+
+.princing__features {
+	list-style: none;
+	padding-left: 0;
+
+	li {
+		border-bottom: 1px solid $color-base-border;
+		padding: $gutter / 4;
+	}
+}

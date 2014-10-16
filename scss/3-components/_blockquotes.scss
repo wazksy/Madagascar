@@ -1,0 +1,42 @@
+//
+// Madagascar - @wazksy
+// _blockquotes.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$BLOCKQUOTES
+\*-------------------------------------------------*/
+
+.blockquotes {
+	background-color: map-get($colors-palette, theme-500);
+	border-left: 10px solid map-get($colors-palette, theme-600);
+	color: map-get($colors-palette, theme-100);
+	margin-bottom: $gutter;
+	padding: $gutter;
+	position: relative;
+	width: 100%;
+}
+
+.blockquotes__icon {
+	border-color: map-get($colors-palette, theme-100);
+	bottom: $gutter / 2;
+	display: block;
+	position: absolute;
+	right: $gutter / 2;
+}
+
+.blockquotes__text {
+	font-size: $font-size-xl;
+}
+
+.blockquotes__author {
+	color: map-get($colors-palette, white);
+}
+
+.blockquotes__author:before {
+	content: '\2014 \00A0';
+}

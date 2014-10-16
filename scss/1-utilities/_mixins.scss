@@ -1,0 +1,142 @@
+//
+// Madagascar - @wazksy
+// _mixins.scss
+//
+
+
+
+//------------------------------------
+//	$MEDIA-QUERY
+//	
+//	Description: 
+//	$breackpoint: Ancho de pantalla ($bp-xs, $bp-s, $bp-m, $bp-l, $bp-xl)
+//	$limit: min or max (por defecto min: mobile first)
+//	$wide: width, device-width, device-height (por defecto width)
+//	$target: screen, print, etc (por defecto 'only screen')
+//	
+//	USO:
+//	
+//	.class-name {
+//	
+//		float: left;
+//	
+//		@include media-query($bp-xs, min, width, 'only screen') {
+//	
+//			float: none;
+//	
+//		}
+//	}
+//	
+//	RESULTADO:
+//	
+//	.class-name {
+//		float: left;
+//	}
+//	
+//	@media only screen and (30em, min-width) {
+//		.class-name {
+//			float: none;
+//		}
+//	}
+//	
+//------------------------------------
+
+// @mixin media-query($breackpoint, $limit: min, $wide: width, $target: 'only screen') {
+
+// 	@media #{$target} and ((#{$limit}-#{$wide}: #{$breackpoint}) {
+
+// 	// 	@content;
+
+// 	}
+
+// }
+
+
+
+//------------------------------------
+//	$PREFIX
+//	
+//	Description: Agrega prefijos para todos los navegadores
+//	$property: Nombre de la propiedad
+//	$value: Valor de la propiedad
+//------------------------------------
+
+@mixin prefix($property, $value...) {
+	-webkit-#{$property}: $value;
+	-moz-#{$property}: $value;
+	-ms-#{$property}: $value;
+	-o-#{$property}: $value;
+	#{$property}: $value;
+}
+
+
+
+//------------------------------------
+//	$BORDER RADIUS
+//	
+//	Description: Agrega bordes redondeados a un objeto
+//	$radius: El valor o valores que se quieren asignar
+//	Ej. @import border-radius(4px), @import border-radius(4px 2px 2px 10px)
+//------------------------------------
+
+@mixin border-radius($radius: 0) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+
+
+
+//------------------------------------
+//	$SHADOW
+//	
+//	Description: Agrega una sombra a un objeto
+//	$shadow: El conjunto de valores de la sombra
+//------------------------------------
+
+@mixin shadow($shadow) {
+	-moz-box-shadow: $shadow;
+	-webkit-box-shadow: $shadow;
+	box-shadow: $shadow;
+}
+
+
+
+//------------------------------------
+//	$CLEARFIX
+//	
+//	Description: Agrega una serie de reglas clearfix a un objeto
+//------------------------------------
+
+@mixin clearfix {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+
+
+//------------------------------------
+//	$TRANSITION
+//	
+//	Description: Agrega una transición a un objeto
+//	$property: La propiedad sobre la que recaerá el efecto
+//	$duration: La duración del efecto
+//	$type: El tipo de efecto
+//------------------------------------
+
+@mixin transition($property: all, $duration: $transition-time, $type: $transition-type) {
+	-webkit-transition: $property $duration $type;
+	-moz-transition: $property $duration $type;
+	-ms-transition: $property $duration $type;
+	-o-transition: $property $duration $type;
+	transition: $property $duration $type;
+}

@@ -1,0 +1,133 @@
+//
+// Madagascar - @wazksy
+// _layout.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$LAYOUT
+\*-------------------------------------------------*/
+
+
+
+/* Z-index */
+
+@each $nivel, $value in $index-nivels {
+
+	.nivel--#{$nivel} { z-index: $value; }
+
+}
+
+
+
+/* Margin */
+
+.margin {
+	margin: $gutter;
+}
+
+.margin--bottom {
+	margin-bottom: $gutter;
+}
+
+.margin--no-bottom {
+	margin-bottom: 0;
+}
+
+
+
+/* Padding */
+
+.padding {
+	padding: $gutter;
+}
+
+.padding--bottom {
+	padding: $gutter;
+}
+
+.padding--extra {
+	padding: $gutter * 3;
+}
+
+.padding--bottom-extra {
+	padding-bottom: $gutter * 3;
+}
+
+.padding--no {
+	padding: 0;
+}
+
+.padding--no-bottom {
+	padding-bottom: 0;
+}
+
+
+
+/* Border */
+
+.border--right {
+	border-right: 1px solid $color-base-border;
+}
+
+.border--left {
+	border-left: 1px solid $color-base-border;
+}
+
+.border--bottom {
+	border-bottom: 1px solid $color-base-border;
+}
+
+.border--top {
+	border-top: 1px solid $color-base-border;
+}
+
+
+
+/* Display */
+
+.block {
+	display: block;
+}
+
+.inline {
+	display: inline;
+}
+
+/**/
+
+
+
+/* Clear */
+
+.clearfix {
+	@include clearfix;
+}
+
+
+
+/* Center */
+
+.center {
+	margin: 0 auto;
+}
+
+
+
+/* Wrapper */
+
+.wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: $max-width;
+	padding-left: $gutter / 2;
+	padding-right: $gutter / 2;
+}
+
+.wrapper--full {
+	padding-left: $gutter / 2;
+	padding-right: $gutter / 2;
+}

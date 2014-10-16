@@ -1,0 +1,85 @@
+//
+// Madagascar - @wazksy
+// _grids.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$GRIDS
+\*-------------------------------------------------*/
+
+.row {
+	padding: {
+		left: 0;
+		right: 0;
+	}
+	margin: {
+		left: -$gutter / 2;
+		right: -$gutter / 2;
+	}
+
+	@include clearfix;
+}
+
+.col {
+
+	float: left;
+	padding: {
+		left: $gutter / 2;
+		right: $gutter / 2;
+	}
+	position: relative;
+}
+
+
+
+
+
+/*-------------------------------------------------*\
+	$GRID-X-SMALL
+\*-------------------------------------------------*/
+
+@import "grid-x-small.scss";
+
+
+
+/*-------------------------------------------------*\
+	$GRID-SMALL
+\*-------------------------------------------------*/
+
+@media only screen and (min-width: $bp-s) {
+	@import "grid-small.scss";
+}
+
+
+
+/*-------------------------------------------------*\
+	$GRID-MEDIUM
+\*-------------------------------------------------*/
+
+@media only screen and (min-width: $bp-m) {
+	@import "grid-medium.scss";
+}
+
+
+
+/*-------------------------------------------------*\
+	$GRID-LARGE
+\*-------------------------------------------------*/
+
+@media only screen and (min-width: $bp-l) {
+	@import "grid-large.scss";
+}
+
+
+
+/*-------------------------------------------------*\
+	$GRID-X-LARGE
+\*-------------------------------------------------*/
+
+@media only screen and (min-width: $bp-xl) {
+	@import "grid-x-large.scss";
+}

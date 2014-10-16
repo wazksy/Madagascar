@@ -1,0 +1,20 @@
+//
+// Madagascar - @wazksy
+// _animations.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$ANIMATIONS
+\*-------------------------------------------------*/
+
+.has-animation {
+	opacity: 0;
+}
+
+.transition {
+	@include transition();
+}

@@ -1,0 +1,269 @@
+//
+// Madagascar - @wazksy
+// _forms.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$FORMS
+\*-------------------------------------------------*/
+
+
+
+/* Inputs */
+
+button,
+input,
+select,
+textarea {
+	font-family: $font-family-input;
+	font-size: $font-size-input;
+	line-height: 1;
+	margin: 0 0 $gutter / 4 0;
+	position: relative;
+	vertical-align: top;
+	z-index: map-get($index-nivels, baseline);
+}
+
+input,
+select,
+textarea {
+	background-color: $color-input-background;
+	color: $color-input-font;
+	display: inline-block;
+	padding: 5px;
+	width: 100%;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+input[type="file"],
+input[type="image"],
+select,
+textarea {
+	border: 1px solid $color-input-border;
+	@include border-radius($radius);
+
+	&:hover {
+		border-color: $color-input-hover-border;
+		z-index: map-get($index-nivels, over-baseline);
+	}
+
+	&:focus {
+		border-color: $color-input-focus-border;
+		outline: 0;
+	}
+}
+
+input {
+	height: $input-height;
+
+	&[type="checkbox"],
+	&[type="image"],
+	&[type="radio"] {
+		cursor: pointer;
+		height: auto;
+		line-height: normal;
+		padding: 0; // Removes excess padding in IE 8/9.
+		width: auto;
+	}
+
+	&[type="checkbox"],
+	&[type="radio"] {
+		float: left;
+		margin-right: 4px;
+		vertical-align: middle;
+	}
+
+	&[type="file"] {
+		width: auto;
+	}
+
+	&[type="hidden"] {
+		display: none;
+	}
+}
+
+input[disabled],
+input[readonly],
+select[disabled],
+select[readonly],
+textarea[disabled],
+textarea[readonly] {
+	background-color: $color-input-disabled-background;
+	cursor: not-allowed;
+
+	&:focus,
+	&:hover {
+		border-color: $color-input-border;
+	}
+}
+
+textarea {
+	overflow: auto; // Removes default vertical scrollbar in IE 8/9.
+	vertical-align: top; // Improves readability and alignment in all browsers.
+}
+
+
+
+/* Button */
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+
+
+
+/* Form */
+
+form ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+fieldset {
+	border-width: 0;
+	margin-bottom: $gutter;
+}
+
+label {
+	color: inherit;
+	display: block;
+	font-size: $font-size-base;
+	margin-bottom: $gutter / 4;
+	position: relative;
+	top: 2px;
+	vertical-align: baseline;
+}
+
+legend {
+	border-bottom: 1px solid $color-input-border;
+	border: 0;
+	color: inherit;
+	display: block;
+	font-size: $font-size-l;
+	margin-bottom: $gutter;
+	padding-bottom: 0.5em;
+	width: 100%;
+}
+
+
+
+/* Placeholder */
+
+/* WebKit browsers */
+input::-webkit-input-placeholder {
+	line-height: 1.5em;
+}
+
+/* Mozilla Firefox 4 to 18 */
+input:-moz-placeholder {
+	line-height: 1.5em;
+}
+
+/* Mozilla Firefox 19+ */
+input::-moz-placeholder {
+	line-height: 1.5em;
+}
+
+/* Internet Explorer 10+ */
+input:-ms-input-placeholder {
+	line-height: 1.5em;
+}
+
+
+
+/* Clasess */
+
+.form__help-text {
+	color: map-get($colors-palette, grey-200);
+	font-style: $font-size-s;
+}
+
+.form__addon {
+	background-color: $color-input-background;
+	border: 1px solid $color-input-border;
+	color: $color-input-font;
+	display: inline-block;
+	display: inline-block;
+	font-size: $font-size-input;
+	height: $input-height;
+	margin: 0 0 $gutter / 4 0;
+	padding: 7px 5px 0 5px;
+	vertical-align: top; // Para conseguir un alieamiento correcto
+	width: auto;
+}
+
+.form--inline {
+	input {
+		display: inline-block;
+		margin-right: $gutter / 4;
+		width: auto;
+	}
+}
+
+.form--group {
+	input,
+	button,
+	.form__addon {
+		border-radius: 0;
+		display: inline-block;
+		margin-right: -1px;
+		width: auto;
+	}
+
+	input:first-child,
+	button:first-child,
+	.form__addon:first-child {
+		border-radius: $radius 0 0 $radius;
+	}
+
+	input:last-child,
+	button:last-child,
+	.form__addon:last-child {
+		border-radius: 0 $radius $radius 0;
+	}
+}
+
+
+
+/* Inputs Sizes */
+
+.input--xl {
+	font-size: $font-size-xl;
+	height: auto;
+}
+
+.input--l {
+	font-size: $font-size-l;
+	height: auto;
+}
+
+.input--s {
+	font-size: $font-size-s;
+	height: auto;
+}
+
+.input--xs {
+	font-size: $font-size-xs;
+	height: auto;
+}

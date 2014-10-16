@@ -1,0 +1,48 @@
+//
+// Madagascar - @wazksy
+// _textures.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$TEXTURES
+\*-------------------------------------------------*/
+
+
+
+/* Background & Background hover */
+// .bck--theme-500
+// .bck--hover-theme-500
+
+@each $color, $value in $colors-palette {
+
+	.bck--#{$color} { background: $value; }
+	.bck--hover-#{$color}:hover { background: $value; }
+
+}
+
+
+/* Border */
+// .border--theme-500
+// .border--hover-theme-500
+
+@each $color, $value in $colors-palette {
+
+	.border--#{$color} { border-color: $value; }
+	.border--hover-#{$color}:hover { border-color: $value; }
+
+}
+
+/* Text */
+// .txt--theme-500
+// .txt--hover-theme-500
+
+@each $color, $value in $colors-palette {
+
+	.txt--#{$color} { color: $value; }
+	.txt--hover-#{$color}:hover { color: $value; }
+
+}

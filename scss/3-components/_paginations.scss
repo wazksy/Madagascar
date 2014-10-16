@@ -1,0 +1,57 @@
+//
+// Madagascar - @wazksy
+// _paginations.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$PAGINATIONS
+\*-------------------------------------------------*/
+
+.pagination {
+	background-color: map-get($colors-palette, grey-100);
+	list-style-type: none;
+	margin: 0;
+	margin-bottom: $gutter;
+	padding: 0;
+	width: 100%;
+	@include clearfix;
+
+	> li {
+		float: left;
+	}
+
+	> li + li > .pagination__link {
+		border-left: 1px solid map-get($colors-palette, white);
+	}
+
+}
+
+.pagination__link {
+	color: $color-base-font;
+	display: block;
+	margin-bottom: 0;
+	padding: $gutter / 2 $gutter;
+	text-decoration: none;
+
+	&:hover {
+		background-color: map-get($colors-palette, grey-200);
+		text-decoration: none;
+	}
+
+	&:visited {
+		color: inherit;
+	}
+}
+
+.pagination__link--active {
+	background-color: map-get($colors-palette, theme-500);
+	color: map-get($colors-palette, white);
+
+	&:visited {
+		color: map-get($colors-palette, white);
+	}
+}

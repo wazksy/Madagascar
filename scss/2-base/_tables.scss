@@ -1,0 +1,58 @@
+//
+// Madagascar - @wazksy
+// _tables.scss
+//
+
+
+
+
+
+/*-------------------------------------------------*\
+	$TABLES
+\*-------------------------------------------------*/
+
+table {
+	background-color: $color-table-background;
+	border-collapse: separate;
+	@include border-radius($radius);
+	border-spacing: 0;
+	border: 1px solid $color-table-border;
+	margin-bottom: $gutter;
+	width: 100%;
+}
+
+tbody:first-child tr:first-child td,
+tbody:first-child tr:first-child th,
+thead:first-child tr:first-child th {
+	border-top: 0;
+}
+
+td,
+th {
+	border-top: 1px solid $color-table-border;
+	font-size: inherit;
+	line-height: $line-height;
+	padding: 8px;
+	text-align: left;
+	vertical-align: top;
+}
+
+tfoot {
+	border-top: 1px solid $color-table-border;
+}
+
+
+
+/* Striped */
+
+.table--striped {
+	tbody tr:nth-child(odd),
+	tbody tr:nth-child(odd) {
+		background-color: $color-table-stripe;
+	}
+
+	tbody tr:hover td,
+	tbody tr:hover th {
+		background-color: $color-table-hover;
+	}
+}
